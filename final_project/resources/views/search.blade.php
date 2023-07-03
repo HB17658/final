@@ -1,4 +1,4 @@
-@extends('layout.base')
+@extends('base')
 @section('title','詳細検索')
 @section('main')
 <form action="">
