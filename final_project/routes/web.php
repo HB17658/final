@@ -36,5 +36,5 @@ Route::get('/top',function(){
 Route::get('/mypage',function(){
     return view('mypage');
 });
-//Route::post('/results'[DbController::class])
+Route::post('/results',[DbController::class,'results'])->name('results');
 
