@@ -10,7 +10,7 @@
     <a href="">ログアウト</a>
     <a href="">ヘルプ</a><br>
 
-    @if(record=>dept == '管理者')
+    <!-- @if(record=>dept == '管理者') -->
     <table>
         <form action="bookRegister">
             <input type="submit" value="書籍の新規登録">
@@ -22,9 +22,9 @@
             <input type="submit" value="社員ID登録">
         </form>
     </table>
-    @endif <br>
+    <!-- @endif <br> -->
 
-    @foreach
+    <!-- @foreach -->
     <table>
         <tr>
             <th colspan="3">{{タイトル}}</th>
@@ -37,11 +37,11 @@
         </tr>
         <tr>
             <td>レンタル日時</td>
-            <td>{{$}}</td>
+            <td>{{}}</td>
         </tr>
         <tr>
             <td>返却日時</td>
-            <td>{{$}}</td>
+            <td>{{}}</td>
         <tr>
             <td colspan="2">
                 <form action="">
@@ -50,6 +50,6 @@
             </td>
         </tr>
     </table>
-    @endforeach
+    <!-- @endforeach -->
 
     @endsection
