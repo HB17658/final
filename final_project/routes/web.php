@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DbController;
+use Illuminate\Database\Console\DbCommand;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,4 +38,11 @@ Route::get('/mypage',function(){
     return view('mypage');
 });
 Route::post('/results',[DbController::class,'results'])->name('results');
-
+Route::get('/addbook',function(){
+    return view('addbook');
+});
+Route::post('/addbook',[DbController::class,'addbook']);
+Route::get('/userResult',function(){
+    return view('userResult');
+});
+Route::post('/userResult',[DbController::class,'userDelete']);
