@@ -24,10 +24,11 @@ Route::get('/sample',function(){
 Route::get('/createUser',function(){
     return view('createUser');
 });
+Route::post('/createUser',[DbController::class,'createUser']);
 Route::get('/login',function(){
     return view('login');
 });
-Route::post('/top',[DbController::class,'login'])->name('login');
+Route::post('/top',[DbController::class,'login']);
 Route::get('/search',function(){
     return view('search');
 });
@@ -37,7 +38,7 @@ Route::get('/top',function(){
 Route::get('/mypage',function(){
     return view('mypage');
 });
-Route::post('/results',[DbController::class,'results'])->name('results');
+Route::post('/results',[DbController::class,'results']);
 Route::get('/addbook',function(){
     return view('addbook');
 });
@@ -46,3 +47,6 @@ Route::get('/userResult',function(){
     return view('userResult');
 });
 Route::post('/userResult',[DbController::class,'userDelete']);
+Route::get('/createAdmin',function(){
+    return view('createAdmin');
+});

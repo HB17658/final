@@ -14,7 +14,7 @@
             @csrf
             <input type="submit" value="ユーザーの削除">
         </form>
-        <form action="humanRegister">
+        <form action="createAdmin">
             @csrf
             <input type="submit" value="社員ID登録">
         </form>

@@ -7,16 +7,22 @@ use Illuminate\Http\Request;
 class DbController extends Controller
 {
 
+    //ログイン画面でのログイン処理
     public function login(Request $r){
-
-        $data = [];
-
-        return view('/top',$data);
+    //login.blade.phpで入力されたID PASSを取得し
+    //DB内のempテーブル内に存在しているかチェック
+        //ifで一致してなければログイン画面に戻す
+        //存在していてパスワードが一致していればtopページへ
+        return view('/top');
     }
+
+    //検索フォームから受け取った文字列から一致する書籍を検索し
+    //連想配列に入れて返す
     public function results(Request $r)
     {
 
-
+        //requestオブジェクトから入力されていた文字列を取り出して
+        //一致するものを検索
 
         $data = [
 
@@ -53,5 +59,8 @@ class DbController extends Controller
     public function createUser(Request $r)
     {
 
+        $data = "おごごごごご";
+        
+        return view('createUser',compact('data'));
     }
 }

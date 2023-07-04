@@ -9,14 +9,19 @@
 </head>
 
 <body>
-    <form action="/login" method="POST">
+    
+    <form action="/createUser" method="POST">
         @csrf
         <h2>新規ユーザー登録</h2>
+
         <p>ID <input type="text" title="●文字以上で設定してください"></p>
         <p>pass <input type="password" title="●文字以上で設定してください"></p>
         <p>pass 確認用(再入力) <input type="password" title="間違いがないか確認のためもう一度入力してください"></p>
         <input type="submit" value="登録">
     </form>
-    <a href="./login">ログイン画面に戻る</a>
+    <a href="/login">ログイン画面に戻る</a>
+    @if(isset($data))
+    <p>{{$data}}</p>
+    @endif
 </body>
 </html>
