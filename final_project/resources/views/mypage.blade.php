@@ -1,5 +1,5 @@
 @extends('base')
-@section('title','詳細検索')
+@section('title','マイページ')
 @section('main')
     <h2>マイページ</h2>
 
