@@ -4,7 +4,7 @@
 
 <h2>本のタイトル</h2>
 @foreach
-<table border="1">
+<table>
     <tr>
         <td>評価</td>
         <td>{{点数}}</td>
