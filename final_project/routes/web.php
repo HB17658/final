@@ -42,3 +42,7 @@ Route::get('/addbook',function(){
     return view('addbook');
 });
 Route::post('/addbook',[DbController::class,'addbook']);
+Route::get('/userResult',function(){
+    return view('userResult');
+});
+Route::post('/userResult',[DbController::class,'userDelete']);
