@@ -2,14 +2,8 @@
 @section('title','本の概要ページ')
 @section('main')
     <h2>検索結果</h2>
-<form action="" method="">
-        @csrf
-        @if
-        ユーザー名<input type="text" name="" required><br>
-        パスワード<input type="text" name="" required>
-        <input type="submit" value="ログイン">
-    </form>
-    </p> -->
+
+
     <table>
         <tr>
             <th colspan="3">{{タイトル}}</th>
@@ -18,7 +12,7 @@
             <th colspan="3">{{作者}}</th>
         </tr>
         <tr>
-            <td rowspan="8"><img src="chukichi.jpg" alt="50"></td>
+            <td rowspan="8"><img src="" alt=""></td>
         </tr>
         <tr>
             <td>ジャンル</td>

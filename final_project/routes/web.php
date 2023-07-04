@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('search');
+    return view('login');
+});
+Route::get('/createUser',function(){
+    return view('createUser');
 });
