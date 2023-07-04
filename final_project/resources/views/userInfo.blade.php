@@ -3,7 +3,7 @@
 @section('main')
 <h2>ユーザー情報</h2>
 <h3>名前</h3>
-<table border="1">
+<table>
     <tr>
         <td>レンタル中</td>
         <td>{{$}}</td>
@@ -18,6 +18,7 @@
     </tr>
 </table>
 <form action="">
+    @csrf
     <input type="submit" value="削除">
 </form>
     @endsection

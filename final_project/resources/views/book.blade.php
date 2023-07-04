@@ -36,6 +36,7 @@
         <tr>
             <td colspan="2">
                 <form action="">
+                    @csrf
                     <input type="submit" value="レンタル">
                 </form>
             </td>

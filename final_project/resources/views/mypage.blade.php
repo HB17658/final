@@ -7,12 +7,15 @@
    
     <table>
         <form action="addbook">
+            @csrf
             <input type="submit" value="書籍の新規登録">
         </form>
         <form action="userResult">
+            @csrf
             <input type="submit" value="ユーザーの削除">
         </form>
         <form action="humanRegister">
+            @csrf
             <input type="submit" value="社員ID登録">
         </form>
     </table>
@@ -39,6 +42,7 @@
         <tr>
             <td colspan="2">
                 <form action="">
+                    @csrf
                     <input type="submit" value="返却">
                 </form>
             </td>

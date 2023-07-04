@@ -26,6 +26,18 @@ class DbController extends Controller
         return view('results',$data);
     }
 
+    //userResult内にて各ユーザーの削除を行った際の処理
+    public function userDelete(Request $r)
+    {
+        $data = null;
+        //userの情報を取得して、DBから削除
+        //削除が完了したら変数dataに「削除完了」メッセージを追加
+        if(true){
+            $data  = "削除完了";
+        }
+        return view('userResult',compact('data'));
+    }
+
     //addbook内にて書籍の新規登録を実行する処理
     public function addbook(Request $r)
     {

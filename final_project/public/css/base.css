@@ -2,7 +2,7 @@
 /* タイトルの設定 */
 .title {
     position: relative;
-    font-size: 26px;
+    font-size: 30px;
     text-align: center;
     border-bottom: 5px solid #dddddd;
 }
@@ -48,11 +48,12 @@ border-bottom: 3px solid #F0E475;
 /*検索ボタンのサイズ */
 input.searchbtn {
     width: 100px;
-    height: 50px;
+    height: 52px;
 }
 /*テキストボックスのサイズ */
 input.textbox{
-    width: 500px;
-    height: 30px;
+    width: 700px;
+    height: 50px;
     text-align: center;
 }
+
