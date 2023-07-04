@@ -3,14 +3,8 @@
 @section('main')
     <h2>マイページ</h2>
 
-    <a href="">トップページ</a>
-    <a href="">詳細検索</a>
-    <a href="">履歴</a>
-    <a href="">マイページ</a>
-    <a href="">ログアウト</a>
-    <a href="">ヘルプ</a><br>
-
     <!-- @if(record=>dept == '管理者') -->
+    @if(record=>dept == '管理者')
     <table>
         <form action="bookRegister">
             <input type="submit" value="書籍の新規登録">
