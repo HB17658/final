@@ -21,5 +21,6 @@
     </form>
     @section('main')
     @show
+    
 </body>
 </html>

@@ -2,7 +2,7 @@
 /* タイトルの設定 */
 .title {
     position: relative;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     border-bottom: 5px solid #dddddd;
 }
@@ -56,4 +56,10 @@ input.textbox{
     height: 50px;
     text-align: center;
 }
-
+/*背景の画像*/
+body{
+    background-image: url(../image/coffee-g7e68ba45a_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
