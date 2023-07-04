@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ユーザー詳細</title>
-</head>
-
-<body>
+@extends('base')
+@section('title','ユーザー情報')
+@section('main')
     <h2>ユーザー情報</h2>
     <h3>名前</h3>
     <table border="1">
@@ -31,5 +24,4 @@
             </td>
         </tr>
     </table>
-</body>
-</html>
+    @endsection

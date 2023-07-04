@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>評価入力</title>
-</head>
-<body>
+@extends('base')
+@section('title','書籍概要')
+@section('main')
+
     <h2>評価</h2>
     <table border="1">
         <tr>
@@ -24,5 +20,4 @@
             </td>
         </tr>
     </table>
-</body>
-</html>
+    @endsection
