@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>書籍一覧ページ検索結果</title>
-</head>
-
-<body>
-    <h1>書籍一覧検索結果ページ</h1>
+@extends('base')
+@section('title', '本の概要ページ')
+@section('main')
+    <h1>
+        書籍一覧検索結果ページ</h1>
 
 
     <a href="">トップページに戻る</a>
@@ -28,18 +22,19 @@
     <div>
         @foreach
         <table border="1">
-            
+
             <tr>
                 <th rowspan="5">
                     <a href=""><img src="../..///" alt=""></a>
                 <td>タイトル</td>
-                
+
                 <td><a href="">あああああ</a></td>
                 </th>
             </tr>
             <tr>
                 <td>作者</td>
-                <td>@foreach @endforeach</td>
+                <td>@foreach @endforeach
+                </td>
             </tr>
             <tr>
                 <td>カテゴリー</td>
@@ -51,6 +46,4 @@
             </tr>
 
         </table>
-    </div>
-
-</html>
+    @endsection

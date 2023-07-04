@@ -12,7 +12,7 @@
             <th colspan="3">{{作者}}</th>
         </tr>
         <tr>
-            <td rowspan="8"><img src="chukichi.jpg" alt="50"></td>
+            <td rowspan="8"><img src="" alt=""></td>
         </tr>
         <tr>
             <td>ジャンル</td>
