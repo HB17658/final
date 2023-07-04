@@ -5,7 +5,7 @@
     <h2>新規管理者登録</h2>
     <form action="/createAdmin" method="post">
         @csrf
-        <table border="1">
+        <table>
             <tr>
                 <td>ID</td>
                 <td>

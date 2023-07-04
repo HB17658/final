@@ -3,7 +3,7 @@
 @section('main')
     <h2>ユーザー</h2>
     @foreach
-    <table border="1">
+    <table>
         <tr>
             <th colspan="3">ユーザー</th>
         </tr>

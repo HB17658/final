@@ -4,7 +4,7 @@
     <h2>書籍登録</h2>
     <form action="/addbook" method="post">
         @csrf
-        <table border="1">
+        <table>
             <tr>
                 <td>ISBN</td>
                 <td>

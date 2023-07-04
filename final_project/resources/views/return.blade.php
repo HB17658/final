@@ -5,7 +5,7 @@
     <h2>評価</h2>
     <form action="/createAdmin" method="post">
         @csrf
-        <table border="1">
+        <table>
             <tr>
                 <td>評価</td>
                 <td>
