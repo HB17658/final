@@ -1,0 +1,43 @@
+.title {
+    position: relative;
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 5px solid #dddddd;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 5px;
+    background-color: #387ccc;
+}
+
+nav ul{
+display: table;
+margin: 0 auto;
+padding: 0 ;
+width: 80%;
+text-align: center;
+}
+nav li{
+display: table-cell;
+min-width: 50px;
+}
+nav a{
+display: block;
+width: 100%;
+text-decoration: none;
+color: #555;
+padding-bottom: 5px;
+}
+nav li.current{
+border-bottom: 3px solid #92D050;
+}
+nav li:hover{
+color: #E7DA66;
+border-bottom: 3px solid #F0E475;
+}

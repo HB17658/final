@@ -9,8 +9,8 @@
         <select name="list" id="">
             <option hidden> 選択してください</option>
             <optgroup label="評価数">
-                <option value="多い">評価数が高い</option>
-                <option value="少ない">評価数が低い</option>
+                <option value="多い">評価が高い</option>
+                <option value="少ない">評価が低い</option>
             </optgroup>
             <optgroup label="貸出回数">
                 <option value="多い">貸出回数が多い</option>
