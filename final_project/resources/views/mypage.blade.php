@@ -4,7 +4,7 @@
     <h2>マイページ</h2>
 
     <!-- @if(record=>dept == '管理者') -->
-    @if(record=>dept == '管理者')
+   
     <table>
         <form action="bookRegister">
             <input type="submit" value="書籍の新規登録">
