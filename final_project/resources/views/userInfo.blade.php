@@ -18,6 +18,7 @@
     </tr>
 </table>
 <form action="">
+    @csrf
     <input type="submit" value="削除">
 </form>
     @endsection

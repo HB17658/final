@@ -11,6 +11,7 @@
             <td><a href="">名前</a></td>
             <td>
                 <form action="">
+                    @csrf
                     <input type="submit" value="削除">
                 </form>
             </td>
