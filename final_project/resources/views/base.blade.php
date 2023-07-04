@@ -13,7 +13,7 @@
     <a href="/mypage" class="menu">マイページ</a>
     <a href="/login" class="menu">ログアウト</a>
     <a href="http://m-search.jp/ggrks/" class="menu">ヘルプ</a>
-    <form action="" method="" class="form">
+    <form action="" method="post" class="form">
         @csrf
         {{-- 本の検索 --}}
         <input type="text" name="" required>

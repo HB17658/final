@@ -8,7 +8,7 @@
         <input type="submit" value="検索">
     </form>
 
-    @foreach
+
     <table>
         <tr>
             <th rowspan="5">
@@ -33,5 +33,5 @@
         </tr>
 
     </table>
-    @endforeach
+
 @endsection
