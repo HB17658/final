@@ -2,14 +2,8 @@
 @section('title','本の概要ページ')
 @section('main')
     <h2>検索結果</h2>
-<form action="" method="">
-        @csrf
-        @if
-        ユーザー名<input type="text" name="" required><br>
-        パスワード<input type="text" name="" required>
-        <input type="submit" value="ログイン">
-    </form>
-    </p> -->
+
+
     <table>
         <tr>
             <th colspan="3">{{タイトル}}</th>
