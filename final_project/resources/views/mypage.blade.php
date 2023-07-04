@@ -3,14 +3,8 @@
 @section('main')
     <h2>マイページ</h2>
 
-    <a href="">トップページ</a>
-    <a href="">詳細検索</a>
-    <a href="">履歴</a>
-    <a href="">マイページ</a>
-    <a href="">ログアウト</a>
-    <a href="">ヘルプ</a><br>
-
-    @if(record=>dept == '管理者')
+    <!-- if(record=>dept == '管理者') -->
+   
     <table>
         <form action="bookRegister">
             <input type="submit" value="書籍の新規登録">
@@ -22,26 +16,26 @@
             <input type="submit" value="社員ID登録">
         </form>
     </table>
-    @endif <br>
+    <!-- endif <br> -->
 
-    @foreach
+    <!-- foreach -->
     <table>
         <tr>
-            <th colspan="3">{{タイトル}}</th>
+            <th colspan="3">タイトル</th>
         </tr>
         <tr>
-            <th colspan="3">{{作者}}</th>
+            <th colspan="3">作者</th>
         </tr>
         <tr>
-            <td rowspan="4"><img src="chukichi.jpg" alt="50"></td>
+            <td rowspan="4"><img src="{{ asset('image/chukichi.jpg')}}" alt="50" height="200" width="150"></td>
         </tr>
         <tr>
             <td>レンタル日時</td>
-            <td>{{$}}</td>
+            <td></td>
         </tr>
         <tr>
             <td>返却日時</td>
-            <td>{{$}}</td>
+            <td></td>
         <tr>
             <td colspan="2">
                 <form action="">
@@ -50,6 +44,6 @@
             </td>
         </tr>
     </table>
-    @endforeach
+    <!-- endforeach -->
 
-    @endsection
+@endsection

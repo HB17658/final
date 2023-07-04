@@ -26,5 +26,15 @@ Route::get('/createUser',function(){
 Route::get('/login',function(){
     return view('login');
 });
-Route::post('/login',[DbController::class,'login']);
+Route::post('/top',[DbController::class,'login'])->name('login');
+Route::get('/search',function(){
+    return view('search');
+});
+Route::get('/top',function(){
+    return view('top');
+});
+Route::get('/mypage',function(){
+    return view('mypage');
+});
+//Route::post('/results'[DbController::class])
 

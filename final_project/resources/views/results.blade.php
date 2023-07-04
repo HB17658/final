@@ -8,30 +8,31 @@
         <input type="submit" value="検索">
     </form>
 
-    @foreach
+
     <table>
         <tr>
-            <th rowspan="5">
-                <a href=""><img src="" alt=""></a>
-            <td>タイトル</td>
-
-            <td><a href="">タイトル</a></td>
-            </th>
+            <th colspan="3">タイトル</th>
         </tr>
         <tr>
-            <td>作者</td>
-            <td>
+            <th colspan="3">作者</th>
+        </tr>
+        <tr>
+            <td rowspan="4"><img src="{{ asset('image/chukichi.jpg')}}" alt="50" height="200" width="150"></td>
+        </tr>
+        <tr>
+            <td>レンタル日時</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>返却日時</td>
+            <td></td>
+        <tr>
+            <td colspan="2">
+                <form action="">
+                    <input type="submit" value="返却">
+                </form>
             </td>
         </tr>
-        <tr>
-            <td>カテゴリー</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>貸出可否</td>
-            <td></td>
-        </tr>
-
     </table>
-    @endforeach
+
 @endsection

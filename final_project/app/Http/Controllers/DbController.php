@@ -11,7 +11,7 @@ class DbController extends Controller
 
         $data = [];
 
-        return view('/',$data);
+        return view('/top',$data);
     }
     public function results(Request $r)
     {
