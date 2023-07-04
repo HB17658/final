@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 class DbController extends Controller
 {
+
+    public function login(Request $r){
+
+        $data = [];
+
+        return view('/top',$data);
+    }
     public function results(Request $r)
     {
 
@@ -21,6 +28,6 @@ class DbController extends Controller
 
     public function createUser(Request $r)
     {
-        
+
     }
 }

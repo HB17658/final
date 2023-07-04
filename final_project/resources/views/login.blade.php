@@ -8,7 +8,8 @@
 </head>
 <body>
     <!-- ログインフォーム -->
-    <form action="top" method="POST">
+    <form action="/top" method="POST">
+        @csrf
         <h2>ログイン</h2>
             <p>ID <input type="text"></p>
             <p>pass <input type="password"></p>
