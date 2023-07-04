@@ -3,7 +3,7 @@
 @section('main')
 
     <h2>評価</h2>
-    <form action="/createAdmin" method="post">
+    <form action="/return" method="post">
         @csrf
         <table>
             <tr>
