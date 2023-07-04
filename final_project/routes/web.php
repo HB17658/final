@@ -26,5 +26,5 @@ Route::get('/createUser',function(){
 Route::get('/login',function(){
     return view('login');
 });
-Route::post('/login',[DbController::class,'login']);
+Route::post('/top',[DbController::class,'login'])->name('login');
 
