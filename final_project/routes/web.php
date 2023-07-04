@@ -19,3 +19,4 @@ Route::get('/', function () {
 Route::get('/createUser',function(){
     return view('createUser');
 });
+Route::get('/l')
