@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DbController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,8 @@ Route::get('/sample',function(){
 Route::get('/createUser',function(){
     return view('createUser');
 });
-Route::get('/l')
+Route::get('/login',function(){
+    return view('login');
+});
+Route::post('/login',[DbController::class,'login']);
+
