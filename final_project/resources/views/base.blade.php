@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
 </head>
+
 <body>
     <h2>書籍検索</h2>
     <a href="" class="menu">トップページ</a>
