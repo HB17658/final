@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* タイトルの設定 */
 .title {
     position: relative;
     font-size: 26px;
@@ -17,6 +18,7 @@
     background-color: #387ccc;
 }
 
+/* メニューバーの設定 */
 nav ul{
 display: table;
 margin: 0 auto;
@@ -43,6 +45,14 @@ color: #E7DA66;
 border-bottom: 3px solid #F0E475;
 }
 
-body{
-    background-color: red;
+/*検索ボタンのサイズ */
+input.searchbtn {
+    width: 100px;
+    height: 50px;
+}
+/*テキストボックスのサイズ */
+input.textbox{
+    width: 500px;
+    height: 30px;
+    text-align: center;
 }
