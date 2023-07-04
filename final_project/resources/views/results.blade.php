@@ -3,10 +3,6 @@
 @section('main')
     <h1>
         書籍一覧検索結果ページ</h1>
-    <form action="" method="">
-        <input type="text" name="">
-        <input type="submit" value="検索">
-    </form>
 
 
     <table>
