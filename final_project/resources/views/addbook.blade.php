@@ -2,6 +2,8 @@
 @section('title','書籍登録')
 @section('main')
     <h2>書籍登録</h2>
+    <form action="/addbook" method="post">
+    @csrf
     <table border="1">
         <tr>
             <td>ISBN</td>
@@ -47,10 +49,16 @@
         </tr>
         <tr>
             <td colspan="2">
-                <form action="">
+                
                     <input type="submit" value="登録">
-                </form>
+                
             </td>
         </tr>
     </table>
+    </form>
+        @if(isset($data))
+        <p>{{$data}}</p>
+        @else
+            <p>な</p>
+        @endif
     @endsection

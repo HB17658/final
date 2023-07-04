@@ -6,10 +6,10 @@
     <!-- if(record=>dept == '管理者') -->
    
     <table>
-        <form action="bookRegister">
+        <form action="addbook">
             <input type="submit" value="書籍の新規登録">
         </form>
-        <form action="userDelete">
+        <form action="userResult">
             <input type="submit" value="ユーザーの削除">
         </form>
         <form action="humanRegister">

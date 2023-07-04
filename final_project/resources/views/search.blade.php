@@ -1,7 +1,8 @@
 @extends('base')
 @section('title','詳細検索')
 @section('main')
-<form action="">
+<form action="/results" method="post">
+    @csrf
         <!--リストの作成-->
         <p>キーワードを入力してください</p>
         <input type="text">

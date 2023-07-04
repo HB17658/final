@@ -23,11 +23,8 @@
             <td>返却日時</td>
             <td></td>
         <tr>
-            <td colspan="2">
-                <form action="">
-                    <input type="submit" value="返却">
-                </form>
-            </td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
 
