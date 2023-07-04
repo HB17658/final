@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>書籍管理システム</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-</head>
-<body>
+@extends('base')
+@section('title', '本の概要ページ')
+@section('main')
+
     <h2>書籍検索</h2>
     <!-- 検索フォーム -->
     <form action="" method="">
@@ -25,6 +20,4 @@
     <a href="">ログアウト</a>
     <!-- ヘルプ -->
     <a href="">ヘルプ</a>
-
-</body>
-</html>
+@endsection

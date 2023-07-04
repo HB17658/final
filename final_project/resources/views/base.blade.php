@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title')</title>
-</head>
-<body>
+@extends('base')
+@section('title', '本の概要ページ')
+@section('main')
     <h2>書籍検索</h2>
     <a href="" class="menu">トップページ</a>
     <a href="" class="menu">履歴</a>
@@ -19,7 +13,6 @@
         <input type="text" name="" required>
         <input type="submit" value="検索" class="searchbtn">
     </form>
-    @section('main')
-    @show
-</body>
-</html>
+@section('main')
+@show
+@endsection
