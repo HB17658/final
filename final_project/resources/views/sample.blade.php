@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/base.css">
     <title>@yield('title')</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <h2 class="title">書籍表示</h2>
@@ -21,11 +21,16 @@
         </ul>
     </nav>
 
+    <!-- 空白行 -->
+    <p></p>
+
     <form action="" method=""  class="form">
         @csrf
         {{-- 本の検索 --}}
-        <input type="text" name="" class="textbox"  placeholder="検索したい書籍名を入力してください"  required>
+        <div class="text-center"><!--bootstrap-->
+        <input type="text" name="" class="textbox"placeholder="検索したい書籍名を入力してください"  required>
         <input type="submit" value="検索" class="searchbtn">
+        </div>
     </form>
     @section('main')
     @show
