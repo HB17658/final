@@ -6,5 +6,21 @@ use Illuminate\Http\Request;
 
 class DbController extends Controller
 {
-    
+    public function results(Request $r)
+    {
+
+
+
+        $data = [
+
+        ];
+
+
+        return view('results',$data);
+    }
+
+    public function createUser(Request $r)
+    {
+        
+    }
 }
