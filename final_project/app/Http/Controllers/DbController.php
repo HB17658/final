@@ -30,11 +30,12 @@ class DbController extends Controller
     public function addbook(Request $r)
     {
         $data = null;
-        //データベースから引っ張った
+        //データベースから引っ張ってきた書籍のISBNと一致するか一致しないかを検証
         
 
         //新規登録が成功すれば変数dataに「登録完了」
         //失敗すれば「登録失敗」的なのを入れてviewに返す
+        $data = "登録完了";
         return view('addbook',compact('data'));
     }
     public function createUser(Request $r)
