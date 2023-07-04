@@ -27,7 +27,7 @@
             <th colspan="3">作者</th>
         </tr>
         <tr>
-            <td rowspan="4"><img src="chukichi.jpg" alt="50"></td>
+            <td rowspan="4"><img src="../../public/image/chukichi.jpg" alt="50"></td>
         </tr>
         <tr>
             <td>レンタル日時</td>
