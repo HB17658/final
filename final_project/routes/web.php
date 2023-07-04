@@ -47,3 +47,6 @@ Route::get('/userResult',function(){
     return view('userResult');
 });
 Route::post('/userResult',[DbController::class,'userDelete']);
+Route::get('/createAdmin',function(){
+    return view('createAdmin');
+});
