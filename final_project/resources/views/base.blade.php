@@ -7,7 +7,7 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    <h2>書籍表示</h2>
+    <h2>書籍検索の課題</h2>
     <a href="/top" class="menu">トップページ</a>
     <a href="/search" class="menu">詳細検索</a>
     <a href="/mypage" class="menu">マイページ</a>
