@@ -25,7 +25,10 @@ Route::get('/',function(){
 Route::post('/new/result',[PrController::class,'search']);
 //ログアウト
 Route::get('/new/login',[PrController::class,'logout']);
-
+//ログインせずにresultへアクセスした場合はログイン画面へ戻す
+Route::get('new/result',function(){
+    return view('new/login');
+});
 
 
 //ボツ
