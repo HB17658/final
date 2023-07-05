@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('company',250);
             $table->string('genre_code',25);
-            $table->integer('year',25);
+            $table->integer('year');
             $table->timestamps();
         });
     }
