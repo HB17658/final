@@ -36,6 +36,13 @@
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+body{
+    background-image: url(../image/coffee.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+}
+
 input[type="text"] {
     width: 250px;
     height: 22px;
