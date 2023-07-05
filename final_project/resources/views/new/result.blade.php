@@ -8,6 +8,7 @@
 <body>
     <h1>書籍検索</h1>
     <form action="/new/result" method="post" >
+    @csrf
     <p>
         <input type="text" name="searchword" placeholder="検索キーワードを入力してください">
         <input type="submit" value="検索">
