@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('rentals', function (Blueprint $table) {
             $table->id();
+            $table->integer('rental_id',25)->primary();
+            $table->unsignedBigInteger('ISBN');
+            $table->string('lemdimg',25);
+            $table->unsignedBigInteger('emp_no');
             $table->timestamps();
         });
     }

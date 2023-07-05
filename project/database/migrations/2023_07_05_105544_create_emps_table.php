@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('emps', function (Blueprint $table) {
             $table->id();
+            $table->integer('emp_no',20)->primary();
+            $table->string('pass',25);
             $table->timestamps();
         });
     }
