@@ -48,7 +48,7 @@ class PrController extends Controller
         //一致したキーワードがある書籍情報を連想配列に格納
         //$searchData = [];
         //retrunでは$searchDataを返す
-        //return view('new/result',$searchData);
+        return view('new/result');
 
     }
 }
