@@ -18,7 +18,7 @@
     <!-- 新規ユーザー登録 -->
     
         <h2>新規ユーザー登録</h2>
-        <a href="./createUser">新規登録</a>
+        <a href="./createUser">新規登録はこちら</a>
     
 </body>
 </html>
