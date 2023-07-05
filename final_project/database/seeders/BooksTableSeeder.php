@@ -25,7 +25,7 @@ class BooksTableSeeder extends Seeder
             'image'=>'image/chukichi.jpg',
             'company'=>'インプレス',
             'genre_code'=>'aa',
-            'year'=>'2019'
+            'year'=>2019
         ]);
 
         DB::table('books')->insert([
@@ -40,7 +40,7 @@ class BooksTableSeeder extends Seeder
             'image'=>'image/chukichi.jpg',
             'company'=>'講談社',
             'genre_code'=>'bb',
-            'year'=>'2017'
+            'year'=>2017
         ]);
 
         DB::table('books')->insert([
@@ -51,8 +51,8 @@ class BooksTableSeeder extends Seeder
             'info'=>'ハリー、おまえさんは魔法使いだしかも、そんじょそこいらの魔法使いじゃねぇ',
             'image'=>'image/chukichi.jpg',
             'company'=>'静山社',
-            'genre_code'=>'',
-            'year'=>'1999'
+            'genre_code'=>'cc',
+            'year'=>1999
         ]);
     }
 }
