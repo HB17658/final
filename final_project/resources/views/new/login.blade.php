@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 
-    <h1>書籍検索</h1>
-    <h2>ログインフォーム</h2>
+    <h1 class="title">書籍検索</h1>
+    <h2 class="subTitle">ログインフォーム</h2>
         <form action="new/result" method="post">
         @csrf
             <p>ログインID</p>
