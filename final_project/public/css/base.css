@@ -4,6 +4,7 @@
     position: relative;
     font-size: 50px;
     text-align: center;
+    line-height: 5rem;
     background-color: rgba(255, 255, 255, 0.250);
     border-left: 3px solid #898989;
     border-bottom: 5px solid #dddddd;
@@ -36,6 +37,7 @@ nav a{
 display: block;
 width: 100%;
 text-decoration: none;
+line-height: 3.5rem;
 color: #222222;
 font-weight: 500;
 background-color: rgba(255, 255, 255, 0.250);
