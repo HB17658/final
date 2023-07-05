@@ -30,9 +30,9 @@ Route::post('/new/result',[PrController::class,'search']);
 // Route::get('/', function () {
 //     return view('login');
 // });
-// Route::get('/sample',function(){
-//     return view('sample');
-// });
+Route::get('/sample',function(){
+    return view('sample');
+ });
 // Route::get('/createUser',function(){
 //     return view('createUser');
 // });
