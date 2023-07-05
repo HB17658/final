@@ -8,9 +8,8 @@
 <body>
 
     <h1>書籍検索</h1>
-    <a href=""></a>
     <h2>ログインフォーム</h2>
-        <form action="new/result" method="post">
+        <form action="/new/result" method="post">
         @csrf
             <p>ログインID</p>
             <input type="text" name="id" placeholder="ログインIDを入力して下さい" required>

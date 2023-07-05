@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>書籍検索</h1>
+    <a href="/new/login">ログアウト</a>
     <form action="/new/result" method="post" >
     @csrf
     <p>
@@ -14,6 +15,9 @@
         <input type="submit" value="検索">
     </p>
     </form>
+    @if(isset($msg))
+    <p>{{$msg}}</p>
+    @endif
     @if(isset($data))
         <h2>書籍一覧</h2>
         @foreach($data as $d)
@@ -28,6 +32,7 @@
 
     @if(isset($id))
     <p>{{$id}}</p>
+    <p>{{$password}}</p>
     @endif
 </body>
 </html>
