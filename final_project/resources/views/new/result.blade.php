@@ -36,16 +36,18 @@
                 <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
             @endforeach
     @endif
-    <!-- フッター -->
-    <footer>
-        <div>
-            <p><small>&copy;2023 ICTエンジニア科</small></p>
-        </div>
-    </footer>
+
 
     @if(isset($id))
     <p>{{$id}}</p>
     <p>{{$password}}</p>
     @endif
+    
+        <!-- フッター -->
+        <footer>
+            <div>
+                <p><small>&copy;2023 ICTエンジニア科</small></p>
+            </div>
+        </footer>
 </body>
 </html>
