@@ -31,6 +31,39 @@
                 <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
             @endforeach
     @endif
+
+    <?php
+
+    $url = 'https://api.openbd.jp/v1/get';
+    
+    // HTTP GETリクエストを送信
+    $response = file_get_contents($url);
+    
+    // レスポンスデータをJSONから連想配列に変換
+    $data = json_decode($response, true);
+    
+    // 書籍情報を表示
+    foreach ($data as $book) {
+        echo 'タイトル: ' . $book['summary']['title'] . '<br>';
+        echo '著者: ' . $book['summary']['author'] . '<br>';
+        echo '出版社: ' . $book['summary']['publisher'] . '<br>';
+        echo '<hr>';
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ?>
     <!-- フッター -->
     <footer>
         <div>

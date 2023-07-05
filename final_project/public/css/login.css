@@ -24,6 +24,7 @@
     display: block;    
     width: 100%;
     text-decoration: none;
+    padding-left: 20px; 
     line-height: 3.5rem;
     color: #222222;
     font-weight: 500;
@@ -31,9 +32,25 @@
     padding-bottom: 5px;
 }
 
+.item{
+    padding-top: 10px; 
+    width: 80px;
+    color: #222222;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.250);
+}
 
-.body {
+form {
+    padding-left: 20px; 
+}
+
+
+
+body {
     font-family: 'M PLUS 1p', sans-serif;
+    background-image: url(../image/coffee.webp);
+    height: 250px;
+    margin-bottom: 40px;
 }
 
 body{
@@ -57,66 +74,4 @@ input[type="password"] {
 input.loginBtn {
     width: 80px;
     height: 32px;
-}
-
-/*  */
-/* タイトルの設定 */
-.title {
-    position: relative;
-    font-size: 50px;
-    text-align: center;
-    line-height: 5rem;
-    background-color: rgba(255, 255, 255, 0.250);
-    border-left: 3px solid #898989;
-    border-bottom: 5px solid #dddddd;
-}
-
-.title::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 5px;
-    background-color: #387ccc;
-}
-
-
-
-
-/*テキストボックスのサイズ */
-input.textbox{
-    width: 700px;
-    height: 50px;
-    text-align: center;
-}
-/*背景の画像*/
-body{
-    font-family: 'Mplus 1p', Yu Gothic UI, sans-serif;
-    /* background-image: url(../image/coffee.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh; */
-}
-#new{
-    background-image: url(../image/coffee.webp);
-    height: 250px;
-    margin-bottom: 40px;
-}
-
-/* フッター */
-footer{
-    position: sticky;
-    top: 100vh;
-    width: 100%;
-    background: #432;
-    text-align: center;
-    padding: 26px 0;
-
-}
-footer p{
-    color: #fff;
-    font-size: 0.875rem;
-    font-family: 'M PLUS 1p', sans-serif;
 }
