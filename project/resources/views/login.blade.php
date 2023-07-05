@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ログインフォーム</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>Document</title>
 </head>
 <body>
-    <!-- ログインフォーム -->
-    <form action="/top" method="POST">
-        @csrf
-        <h2>ログイン</h2>
-            <p>ID <input type="text"></p>
-            <p>pass <input type="password"></p>
-            <input type="submit">
+
+    <h1>書籍検索</h1>
+        <form action="/result" method="post">
+        <p>ログインID</p>
+        <input type="text" name="id" required>
+        <p>パスワード</p>
+        <input type="password" name="password" required> 
     </form>
-    
+
 </body>
 </html>
