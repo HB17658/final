@@ -11,10 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('emps', function (Blueprint $table) {
+        Schema::create('testfs', function (Blueprint $table) {
             $table->id();
-            $table->integer('emp_no',20)->primary();
-            $table->string('pass',25);
             $table->timestamps();
         });
     }
@@ -24,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('emps');
+        Schema::dropIfExists('testfs');
     }
 };

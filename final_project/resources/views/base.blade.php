@@ -7,6 +7,7 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="css/base.css">
 </head>
+
 <body>
     <h2>書籍検索の課題</h2>
     <a href="/top" class="menu">トップページ</a>

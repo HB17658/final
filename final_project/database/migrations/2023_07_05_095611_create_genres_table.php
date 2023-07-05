@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('genres', function (Blueprint $table) {
             $table->id();
+            $table->string('genre_name',25)->primary();
+            $table->unsignedBigInteger('genre_code');
             $table->timestamps();
+
+            $table->foreign('genre_code')->references('genre_code')->on('books');
         });
     }
 

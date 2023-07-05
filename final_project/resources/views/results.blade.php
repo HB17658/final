@@ -1,6 +1,7 @@
 @extends('base')
 @section('title', '本の概要ページ')
 @section('main')
+
     <h1>
         書籍一覧検索結果ページ</h1>
 
