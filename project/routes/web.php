@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PrController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('/login');
 });
-Route::post('result',[]);
+Route::post('/result',[PrController::class,'search']);

@@ -8,12 +8,15 @@
 <body>
 
     <h1>書籍検索</h1>
+    <h2>ログインフォーム</h2>
         <form action="/result" method="post">
-        <p>ログインID</p>
-        <input type="text" name="id" required>
-        <p>パスワード</p>
-        <input type="password" name="password" required> 
-    </form>
+        @csrf
+            <p>ログインID</p>
+            <input type="text" name="id" required>
+            <p>パスワード</p>
+            <input type="password" name="password" required> 
+            <input type="submit" value="ログイン">
+        </form>
 
 </body>
 </html>
