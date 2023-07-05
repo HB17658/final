@@ -25,5 +25,9 @@
                 <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
             @endforeach
     @endif
+
+    @if(isset($id))
+    <p>{{$id}}</p>
+    @endif
 </body>
 </html>
