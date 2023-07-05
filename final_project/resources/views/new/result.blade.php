@@ -10,7 +10,7 @@
 <body>
 <div id="new">
     <h1 class="title">書籍検索</h1>
-    <a href="/">ログアウト</a>
+    <a href="/" class="">ログアウト</a>
     <form action="/new/result" method="post" >
     @csrf
     <div class="text-center">
@@ -29,6 +29,25 @@
         <h2>書籍一覧</h2>
         @foreach($data as $d)
                 <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
+                <table>
+        <tr><th colspan="3">タイトル後で変える</th></tr>
+        <tr><th colspan="3">作者(後で変える)</th></tr>
+        <tr>
+            <td rowspan="4"><img src="" alt="50" height="200" width="150"></td>
+        </tr>
+        <tr>
+            <td>本の概要</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>返却日時</td>
+            <td></td>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
         @endforeach
     @elseif(isset($searchData))
         <h2>検索結果一覧</h2>
@@ -36,16 +55,18 @@
                 <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
             @endforeach
     @endif
-    <!-- フッター -->
-    <footer>
-        <div>
-            <p><small>&copy;2023 ICTエンジニア科</small></p>
-        </div>
-    </footer>
+
 
     @if(isset($id))
     <p>{{$id}}</p>
     <p>{{$password}}</p>
     @endif
+    
+        <!-- フッター -->
+        <footer>
+            <div>
+                <p><small>&copy;2023 ICTエンジニア科</small></p>
+            </div>
+        </footer>
 </body>
 </html>

@@ -6,7 +6,7 @@
         書籍一覧検索結果ページ</h1>
 
 
-    <table>
+    <table border="1">
         <tr>
             <th colspan="3">タイトル</th>
         </tr>
@@ -17,16 +17,12 @@
             <td rowspan="4"><img src="{{ asset('image/chukichi.jpg')}}" alt="50" height="200" width="150"></td>
         </tr>
         <tr>
-            <td>レンタル日時</td>
-            <td></td>
+            <td colspan="2">概要</td>
         </tr>
         <tr>
-            <td>返却日時</td>
-            <td></td>
-        <tr>
-            <td></td>
-            <td></td>
+            <td colspan="2" rowspan="2">dadadadadadadw</td>
         </tr>
+
     </table>
 
 @endsection
