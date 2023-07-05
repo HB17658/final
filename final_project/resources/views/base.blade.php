@@ -8,8 +8,9 @@
 </head>
 
 <body>
-    <h2>書籍検索</h2>
+    <h2>書籍表示</h2>
     <a href="" class="menu">トップページ</a>
+    <a href="" class="menu">詳細検索</a>
     <a href="" class="menu">履歴</a>
     <a href="" class="menu">マイページ</a>
     <a href="" class="menu">ログアウト</a>
