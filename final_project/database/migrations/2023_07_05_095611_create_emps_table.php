@@ -15,11 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('emp_no',20)->primary();
             $table->string('pass',25);
-            $table->unsignedBigInteger('dept_id');
-            $table->string('emp_name',25);
             $table->timestamps();
-
-            $table->foreign('dept_id')->references('dept_id')->on('depts');
         });
     }
 

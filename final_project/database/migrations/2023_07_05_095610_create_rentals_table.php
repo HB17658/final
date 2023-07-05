@@ -15,12 +15,12 @@ return new class extends Migration
             $table->id();
             $table->integer('rental_id',25)->primary();
             $table->unsignedBigInteger('ISBN');
-            // $table->return
-            // $table->rental
-            $table->integer('stock_no',20);
-            // $table->lending
+            $table->string('lending',25);
             $table->unsignedBigInteger('emp_no');
             $table->timestamps();
+
+            $table->foreign('ISBN')->references('ISBN')->on('books');
+            $table->foreign('emp_no')->references('emp_no')->on('emps');
         });
     }
 
