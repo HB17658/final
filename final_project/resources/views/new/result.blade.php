@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="/css/base.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
@@ -29,6 +29,25 @@
         <h2>書籍一覧</h2>
         @foreach($data as $d)
                 <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
+                <table>
+        <tr><th colspan="3">タイトル後で変える</th></tr>
+        <tr><th colspan="3">作者(後で変える)</th></tr>
+        <tr>
+            <td rowspan="4"><img src="" alt="50" height="200" width="150"></td>
+        </tr>
+        <tr>
+            <td>本の概要</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>返却日時</td>
+            <td></td>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
         @endforeach
     @elseif(isset($searchData))
         <h2>検索結果一覧</h2>

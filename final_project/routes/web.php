@@ -67,3 +67,6 @@ Route::get('/sample',function(){
 // Route::get('/createAdmin',function(){
 //     return view('createAdmin');
 // });
+Route::get('/results',function(){
+    return view('results');
+});

@@ -34,6 +34,8 @@ class PrController extends Controller
         $searchword = $r->session()->put('searchword',$searchword);
         $id = $r->session()->get('id');
         $password = $r->session()->get('password');
+        
+
 
 
         //一覧表示するためにデータベースから書籍情報をすべて取得し1つずつレコードを連想配列に入れる
