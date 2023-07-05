@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('subtitle',250);
             $table->string('author_name',25);
             $table->string('info',250);
-            $table->string('image');
+            $table->string('image',200);
             $table->string('company',250);
             $table->string('genre_code',25);
             $table->integer('year');

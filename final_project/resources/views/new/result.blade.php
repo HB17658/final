@@ -21,6 +21,9 @@
     </div>
     
     </form>
+    @if(isset($msg))
+    <p>{{$msg}}</p>
+    @endif
     @if(isset($data))
         <h2>書籍一覧</h2>
         @foreach($data as $d)
@@ -32,11 +35,19 @@
                 <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
             @endforeach
     @endif
+<<<<<<< HEAD
     <!-- フッター -->
     <footer>
         <div>
             <p><small>&copy;2023 ICTエンジニア科</small></p>
         </div>
     </footer>
+=======
+
+    @if(isset($id))
+    <p>{{$id}}</p>
+    <p>{{$password}}</p>
+    @endif
+>>>>>>> 8dc54c0d5da7de998712f6bae645bc3591d8372e
 </body>
 </html>

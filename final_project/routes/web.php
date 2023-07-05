@@ -17,12 +17,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
+//トップページ
 Route::get('/',function(){
     return view('new/login');
 });
+//検索またはログイン
 Route::post('/new/result',[PrController::class,'search']);
-
+//ログアウト
+Route::get('/new/login',[PrController::class,'logout']);
 
 
 

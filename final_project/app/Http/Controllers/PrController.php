@@ -10,6 +10,8 @@ class PrController extends Controller
     {
         $id = $r->id;
         $password = $r->password;
+        //requestオブジェクトからsearchwordを抽出
+        $searchword = $r->searchword;
         //DBから社員データを抽出
         //$empData = 
         if(isset($id) && isset($password)){
@@ -23,6 +25,7 @@ class PrController extends Controller
             //セッションにidやpasswordを登録
             $r->session()->put('id',$id);
             $r->session()->put('password',$password);
+            return view('/new/result');
         }
         $id = $r->session()->get('id');
         $password = $r->session()->get('password');
@@ -35,10 +38,14 @@ class PrController extends Controller
         
 
         
-
+        if(!isset($searchword)){
+            $msg = "検索文字が未入力";
+            return view('new/result',compact('msg'));
+        }
         //入力された文字列と一致する書籍情報をすべて取得し1つずつ取得し、連想配列に入れる。
-        //requestオブジェクトからsearchwordを抽出
-        $searchword = $r->searchword;
+        
+        
+        
         //データベースから書籍をすべて抽出
 
         //一致するキーワードを検索
@@ -48,7 +55,13 @@ class PrController extends Controller
         //一致したキーワードがある書籍情報を連想配列に格納
         //$searchData = [];
         //retrunでは$searchDataを返す
-        return view('new/result');
+        return view('new/result',compact('id','password'));
 
+    }
+
+    public function logout(Request $r){
+        $r->request->remove('id');
+        $r->request->remove('password');
+        return view('new/login');
     }
 }
