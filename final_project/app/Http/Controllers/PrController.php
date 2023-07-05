@@ -27,6 +27,11 @@ class PrController extends Controller
             $r->session()->put('password',$password);
             return view('/new/result');
         }
+        if(!isset($searchword)){
+            $msg = "検索文字が未入力";
+            return view('new/result',compact('msg'));
+        }
+        $searchword = $r->session()->put('searchword',$searchword);
         $id = $r->session()->get('id');
         $password = $r->session()->get('password');
 
@@ -38,10 +43,7 @@ class PrController extends Controller
         
 
         
-        if(!isset($searchword)){
-            $msg = "検索文字が未入力";
-            return view('new/result',compact('msg'));
-        }
+        
         //入力された文字列と一致する書籍情報をすべて取得し1つずつ取得し、連想配列に入れる。
         
         

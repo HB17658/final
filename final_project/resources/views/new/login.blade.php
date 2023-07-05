@@ -20,6 +20,11 @@
             <input type="password" name="password" placeholder="パスワードを入力して下さい" required> 
             <input type="submit" class="loginBtn" value="ログイン">
         </form>
-
+<!-- フッター -->
+<footer>
+        <div>
+            <p><small>&copy;2023 ICTエンジニア科</small></p>
+        </div>
+    </footer>
 </body>
 </html>
