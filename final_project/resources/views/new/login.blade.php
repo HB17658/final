@@ -12,9 +12,9 @@
         <form action="new/result" method="post">
         @csrf
             <p>ログインID</p>
-            <input type="text" name="id" required>
+            <input type="text" name="id" placeholder="ログインIDを入力して下さい" required>
             <p>パスワード</p>
-            <input type="password" name="password" required> 
+            <input type="password" name="password" placeholder="パスワードを入力して下さい" required> 
             <input type="submit" value="ログイン">
         </form>
 
