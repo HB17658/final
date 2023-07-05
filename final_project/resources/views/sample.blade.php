@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+    <div id="new">
+    
     <h2 class="title">書籍表示</h2>
     <nav>
         <ul>
@@ -20,7 +22,7 @@
             <li><a href="" class="menu">ヘルプ</a></li>
         </ul>
     </nav>
-
+    
     <!-- 空白行 -->
     <p></p>
 
@@ -32,7 +34,13 @@
         <input type="submit" value="検索" class="searchbtn">
         </div>
     </form>
+    </div>
     @section('main')
     @show
+    <footer>
+        <div>
+            <p><small>&copy;2023 ICTエンジニア科</small></p>
+        </div>
+    </footer>
 </body>
 </html>
