@@ -18,7 +18,7 @@ class PrController extends Controller
         //入力された文字列と一致する書籍情報をすべて取得し1つずつ取得し、連想配列に入れる。
         $searchData = [];
         //retrunでは$searchDataを返す
-        return view('result',$searchData);
+        return view('new/result',$searchData);
 
     }
 }

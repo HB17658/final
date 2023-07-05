@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DbController;
+use App\Http\Controllers\PrController;
 use Illuminate\Database\Console\DbCommand;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',function(){
     return view('new/login');
 });
+Route::post('/new/result',[PrController::class,'search']);
 
 
 

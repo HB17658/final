@@ -9,7 +9,14 @@
     <h1>書籍検索</h1>
     @if(isset($data))
         <h2>書籍一覧</h2>
-        @foreach($)
+        @foreach($data as $d)
+
+        @endforeach
+    @else(isset($result))
+        <h2>検索結果一覧</h2>
+            @foreach($result as $r)
+
+            @endforeach
     @endif
 </body>
 </html>

@@ -9,7 +9,7 @@
 
     <h1>書籍検索</h1>
     <h2>ログインフォーム</h2>
-        <form action="/result" method="post">
+        <form action="new/result" method="post">
         @csrf
             <p>ログインID</p>
             <input type="text" name="id" required>
