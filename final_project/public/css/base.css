@@ -93,3 +93,18 @@ footer p{
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+/* ログアウトボタン */
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #9966FF;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #CC99FF;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
