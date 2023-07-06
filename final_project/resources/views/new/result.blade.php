@@ -10,6 +10,7 @@
 <body>
 <div id="new">
     <h1 class="title">書籍検索</h1>
+    <a href="/" class="">ログアウト</a>
     <p class="right"><a href="/" class="btn btn--orange" >ログアウト</a></p>
     <form action="/new/result" method="post" >
     @csrf
@@ -62,6 +63,12 @@
         <h2>検索結果一覧</h2>
             @foreach($searchData as $r)
                 <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
+                <table>
+                    <tr><th colspan="3">{{$result->title}}</th></tr>
+                    <tr><th colspan="3">{{$result->author_name}}</th></tr>
+                    <tr>
+                        <td rowspan="4"><img src="" alt="50" height="200" width="150"></td>
+                    </tr>
             @endforeach
     @endif
 
