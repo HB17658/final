@@ -20,6 +20,9 @@
     height: 5px;
     background-color: #387ccc;
 }
+.content-wrapper {
+    min-height: calc(110vh - 100px); /*フッターの調整 */
+}
 
 /* メニューバーの設定 */
 /* nav ul{
@@ -78,7 +81,7 @@ body{
 
 /* フッター */
 footer{
-    position: absolute;
+    position:fixed;
     bottom: 0;
     left: 0;
     width: 100%;
