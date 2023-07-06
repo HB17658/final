@@ -78,10 +78,15 @@ input[type="password"] {
     height: 40px;
 }
 
-/*ログインボタンのサイズ */
+/*ログインボタン*/
 input.loginBtn {
     width: 100%;
     line-height: 3rem;
     font-weight: 500;
     background-color: rgba(4, 161, 252, 0.692);
+    transition: background-color 0.3s ease; /* 色の変化を滑らかにするためのトランジションを追加 */
+}
+
+input.loginBtn:hover {
+    background-color: rgba(4, 161, 252, 1); /* カーソルがボタン上に来た時の背景色 */
 }
