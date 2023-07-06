@@ -33,8 +33,8 @@
             <h2 class="post-title">書籍の詳細</h2>
             <p class="post-data">書籍 <span>一覧</span></p>
         </header>
-    
-        <h2>書籍一覧</h2>
+        
+        <!-- <h2>書籍一覧</h2> -->
         @foreach($results as $result)
                 <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
                 <table>
