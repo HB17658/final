@@ -22,7 +22,7 @@
 }
 
 /* メニューバーの設定 */
-nav ul{
+/* nav ul{
 display: table;
 margin: 0 auto;
 padding: 0 ;
@@ -49,7 +49,7 @@ border-bottom: 3px solid #92D050;
 nav li:hover{
 color: #E7DA66;
 border-bottom: 3px solid #F0E475;
-}
+} */
 
 /*検索ボタンのサイズ */
 input.searchbtn {
@@ -107,4 +107,8 @@ a.btn--orange:hover {
 
 a.btn--radius {
    border-radius: 100vh;
+}
+/* 右に寄せる */
+p.right{
+    text-align: right;
 }
