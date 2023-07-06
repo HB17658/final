@@ -147,8 +147,15 @@ p.right{
     font-weight: normal;
     margin-left: 120px;
 }
-/* 本のタイトルとか */
-.bookTitle{
-    width: 100;
-    height: 100;
+/* 本のタイトル */
+.booktitle{
+    font-size: 2rem;
+}
+/* 本の著者*/
+.bookauthor{
+    color: #387ccc;
+}
+/* 本の概要 */
+.bookOverview{
+    border-bottom: 1px solid chocolate;
 }
