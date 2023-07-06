@@ -36,7 +36,8 @@
             <p class="post-data">書籍 <span>一覧</span></p>
         </header>
         
-        <div class = "content-wrapper">
+        <div class ="news-contents wrapper">
+            <article><!-- メイン部分 -->
             @foreach($results as $result)
             <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
             <table>
@@ -53,7 +54,10 @@
                 </tr>
                 
             </table>
-
+            </article>
+            <aside><!-- サブ部分 -->
+            サイドバー
+            </aside>
             @endforeach
         </div>
     @elseif(isset($searchData))
