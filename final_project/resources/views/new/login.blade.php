@@ -12,7 +12,7 @@
 <body>
     <h1 class="title">書籍検索</h1>
     <div class="loginForm">
-    <h2 class="subTitle">ログインフォーム</h2>
+    <h2 class="subTitle"><span><i class="fa fa-sign-in"></i></span> Login</h2>
         <form class="form" action="new/result" method="post">
         @csrf
             <p class="item"><span><i class="fa fa-user"></i></span> ログインID</p>
