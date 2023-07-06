@@ -22,7 +22,7 @@
 }
 
 /* メニューバーの設定 */
-nav ul{
+/* nav ul{
 display: table;
 margin: 0 auto;
 padding: 0 ;
@@ -49,7 +49,7 @@ border-bottom: 3px solid #92D050;
 nav li:hover{
 color: #E7DA66;
 border-bottom: 3px solid #F0E475;
-}
+} */
 
 /*検索ボタンのサイズ */
 input.searchbtn {
@@ -93,3 +93,22 @@ footer p{
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+/* ログアウトボタン */
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #9966FF;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #CC99FF;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+/* 右に寄せる */
+p.right{
+    text-align: right;
+}
