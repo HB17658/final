@@ -10,7 +10,7 @@
 <body>
 <div id="new">
     <h1 class="title">書籍検索</h1>
-    <a href="/">ログアウト</a>
+    <a href="/" class="">ログアウト</a>
     <form action="/new/result" method="post" >
     @csrf
     <div class="text-center">
