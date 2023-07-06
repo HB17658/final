@@ -20,28 +20,40 @@
     height: 5px;
     background-color: #387ccc;
 }
+.loginForm{
+    background-color: #222222b4;
+    min-height: 17rem;
+    margin: auto;
+    max-width: 50%;
+    padding: .5rem;
+}
+
 .subTitle{
     display: block;    
     width: 100%;
     text-decoration: none;
-    padding-left: 20px; 
+    text-align: center; 
     line-height: 3.5rem;
     color: #222222;
     font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.250);
+    background-color: rgba(255, 255, 255, 0.550);
     padding-bottom: 5px;
 }
 
 .item{
-    padding-top: 10px; 
-    width: 80px;
+    padding: 10px;
+    width: 110px;
     color: #222222;
     font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.250);
+    background-color: rgba(252, 165, 4, 0.692);
+}
+
+.inputMargin{
+    margin-bottom: 15px;
 }
 
 form {
-    padding-left: 20px; 
+    padding: 10px; 
 }
 
 body{
@@ -62,8 +74,10 @@ input[type="password"] {
     height: 30px;
 }
 
-/*検索ボタンのサイズ */
+/*ログインボタンのサイズ */
 input.loginBtn {
     width: 80px;
     height: 32px;
+    font-weight: 500;
+    background-color: rgba(252, 165, 4, 0.692);
 }
