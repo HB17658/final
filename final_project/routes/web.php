@@ -22,12 +22,12 @@ Route::get('/',function(){
     return view('new/login');
 });
 //検索またはログイン
-Route::post('/new/result',[PrController::class,'search']);
+Route::post('new/result',[PrController::class,'search']);
 //ログアウト
-Route::get('/new/login',[PrController::class,'logout']);
+Route::get('new/login',[PrController::class,'logout']);
 //ログインせずにresultへアクセスした場合はログイン画面へ戻す
 Route::get('new/result',function(){
-    return view('new/login');
+    return redirect()->back();
 });
 
 
@@ -35,9 +35,9 @@ Route::get('new/result',function(){
 // Route::get('/', function () {
 //     return view('login');
 // });
-Route::get('/sample',function(){
-    return view('sample');
- });
+// Route::get('sample',function(){
+//     return view('sample');
+//  });
 // Route::get('/createUser',function(){
 //     return view('createUser');
 // });
@@ -67,7 +67,7 @@ Route::get('/sample',function(){
 // Route::get('/createAdmin',function(){
 //     return view('createAdmin');
 // });
-Route::get('/results',function(){
-    return view('results');
-});
+// Route::get('results',function(){
+//     return view('results');
+// });
 //Route::post('/new/result',[PrController::class,'searchBook']);
