@@ -23,11 +23,11 @@
     <h2 class="subTitle"><span><i class="fa fa-chevron-circle-right"></i></span> ログインフォーム</h2>
         <form class="form" action="new/result" method="post">
         @csrf
-            <p class="item"><span><i class="fa fa-user"></i></span> ログインID</p>
+            <p class="item"><span><i class="fa fa-user fa-bounce"></i></span> ログインID</p>
             <div class="inputMargin">
             <input type="text" name="id" placeholder="ログインIDを入力して下さい" required></div>
-            <p class="item"><span><i class="fa fa-lock"></i></span> パスワード</p>
-            <input type="password" name="password" placeholder="パスワードを入力して下さい" required>
+            <p class="item"><span><i class="fa fa-lock fa-bounce"></i></span> パスワード</p>
+            <div class="inputMargin"><input type="password" name="password" placeholder="パスワードを入力して下さい" required></div>
             <input type="submit" class="loginBtn" value="ログイン">
         </form>
         </div>
