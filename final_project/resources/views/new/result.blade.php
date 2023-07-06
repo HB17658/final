@@ -10,7 +10,6 @@
 <body>
 <div id="new">
     <h1 class="title">書籍検索</h1>
-    <a href="/" class="">ログアウト</a>
     <p class="right"><a href="/" class="btn btn--orange" >ログアウト</a></p>
     <form action="/new/result" method="post" >
     @csrf
