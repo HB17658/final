@@ -120,9 +120,11 @@ p.right{
 
 
 /* 検索してifの中 */
+
 /* 記事部分 */
 article{
     width: 60%;
+    
 }
 /* サイドバー */
 aside{
@@ -133,6 +135,7 @@ aside{
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
 
 
 .post-info{
