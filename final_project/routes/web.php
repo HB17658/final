@@ -70,4 +70,4 @@ Route::get('/sample',function(){
 Route::get('/results',function(){
     return view('results');
 });
-Route::post('/new/result',[PrController::class,'searchBook']);
+//Route::post('/new/result',[PrController::class,'searchBook']);
