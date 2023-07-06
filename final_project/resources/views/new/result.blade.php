@@ -44,15 +44,14 @@
             <p class="post-data">書籍 <span>一覧</span></p>
         </header>
         
-        <div class ="news-contents wrapper">
-            <article><!-- メイン部分 -->
+        <div class = "content-wrapper">
             @foreach($results as $result)
             <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
             <table>
                 <tr><th colspan="3" class="booktitle">{{$result->title}}</th></tr>
                 <tr><th colspan="3" class="bookauthor">{{$result->author_name}}</th></tr>
                 <tr>
-                    <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="250" width="250"></td>
+                    <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
                 </tr>
                 <tr>
                 <td class="bookOverview">本の概要</td>
@@ -61,11 +60,6 @@
                     <td>{{$result->info}}</td>
                 </tr>
                 
-            </table>
-            </article>
-            <aside><!-- サブ部分 -->
-            サイドバー
-            </aside>
                 </table>
                 <br>
             @endforeach
@@ -83,12 +77,12 @@
                     <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
                 <table>
                 <tr><th colspan="3" class="booktitle">{{$r->title}}</th></tr>
-                <tr><th colspan="3">{{$r->author_name}}</th></tr>
+                <tr><th colspan="3" class="bookauthor">{{$r->author_name}}</th></tr>
                 <tr>
                     <td rowspan="4"><img src="{{ asset($r->image)}}" alt="50" height="200" width="150"></td>
                 </tr>
                 <tr>
-                <td>本の概要</td>
+                <td class="bookOverview">本の概要</td>
                 </tr>
                 <tr>
                     <td>{{$r->info}}</td>
