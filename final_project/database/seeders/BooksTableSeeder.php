@@ -25,7 +25,7 @@ class BooksTableSeeder extends Seeder
             'image'=>'image/chukichi.jpg',
             'company'=>'インプレス',
             'genre_code'=>'aa',
-            'year'=>2019
+            'year'=>('2019/11/15')
         ]);
 
         DB::table('books')->insert([
@@ -39,7 +39,7 @@ class BooksTableSeeder extends Seeder
             'image'=>'image/chukichi.jpg',
             'company'=>'講談社',
             'genre_code'=>'bb',
-            'year'=>2017
+            'year'=>('2017/10/17')
         ]);
 
         DB::table('books')->insert([
@@ -51,7 +51,7 @@ class BooksTableSeeder extends Seeder
             'image'=>'image/chukichi.jpg',
             'company'=>'静山社',
             'genre_code'=>'cc',
-            'year'=>1999
+            'year'=>('1999/12/01')
         ]);
     }
 }

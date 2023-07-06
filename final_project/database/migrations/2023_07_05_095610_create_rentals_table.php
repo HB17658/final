@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('rentals', function (Blueprint $table) {
             $table->integer('rental_id',25);
             $table->string('ISBN',20);
-            $table->string('lending',25);
             $table->integer('emp_no');
+            $table->date('rental')->nullable();
+            $table->date('return')->nullable();
             $table->timestamps();
 
             $table->foreign('emp_no')->references('emp_no')->on('emps');
