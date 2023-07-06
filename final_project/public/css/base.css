@@ -116,7 +116,25 @@ p.right{
     text-align: right;
 }
 
+
+
+
 /* 検索してifの中 */
+/* 記事部分 */
+article{
+    width: 74%;
+}
+/* サイドバー */
+aside{
+    width: 22%;
+}
+/* .news-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+} */
+
+
 .post-info{
     position: relative;
     padding-top: 4px;
