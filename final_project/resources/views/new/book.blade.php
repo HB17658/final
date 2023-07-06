@@ -10,35 +10,35 @@
 
 <body>
     <h2>書籍表示</h2>
+    @foreach($result as $r)
     <table>
         <tr>
-            <th colspan="3">五等分の花嫁</th>
+            <th colspan="3">{{$r->title}}</th>
         </tr>
         <tr>
-            <th colspan="3">春場ねぎ</th>
+            <th colspan="3">{{$r->author_name}}</th>
         </tr>
         <tr>
-            <td rowspan="8"><img src="chukichi.jpg" alt="50"></td>
+            <td rowspan="8"><img src="{{$result->image}}" alt="50"></td>
         </tr>
         <tr>
             <td>出版日</td>
-            <td>2017/10/17</td>
+            <td>{{$r->year}}</td>
         </tr>
         <tr>
             <td>出版社</td>
-            <td>講談社</td>
+            <td>{{$r->company}}</td>
         </tr>
         <tr>
             <td>ISBN</td>
-            <td>978-4-06-510249-7</td>
+            <td>{{$r->ISBN}}</td>
         </tr>
         <tr>
             <td>概要</td>
-            <td>貧乏な生活を送る高校２年生・上杉風太郎のもとに、好条件の家庭教師アルバイトの話が舞い込む。
-                ところが教え子はなんと同級生！！しかも五つ子だった！！
-                全員美少女、だけど「落第寸前」「勉強嫌い」の問題児！ 風太郎は、超個性的な彼女たちを「卒業」まで導けるか──！？'</td>
+            <td>{{$r->info}}</td>
         </tr>
     </table>
+    @endforeach
 </body>
 
 </html>

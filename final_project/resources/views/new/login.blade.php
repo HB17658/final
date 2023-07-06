@@ -27,7 +27,7 @@
             <div class="inputMargin">
             <input type="text" name="id" placeholder="ログインIDを入力して下さい" required></div>
             <p class="item"><span><i class="fa fa-lock"></i></span> パスワード</p>
-            <input type="password" name="password" placeholder="パスワードを入力して下さい" required>
+            <div class="inputMargin"><input type="password" name="password" placeholder="パスワードを入力して下さい" required></div>
             <input type="submit" class="loginBtn" value="ログイン">
         </form>
         </div>
