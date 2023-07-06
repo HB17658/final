@@ -27,7 +27,7 @@
     <p>{{$msg}}</p>
     @endif
     @if(isset($results))
-    
+        
         <!-- タイトルヘッダー -->
         <header class="post-info">
             <h2 class="post-title">書籍の詳細</h2>
