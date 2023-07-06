@@ -21,7 +21,7 @@
     background-color: #387ccc;
 }
 .content-wrapper {
-    min-height: calc(110vh - 100px); /*フッターの調整 */
+    min-height: calc(150vh - 100px); /*フッターの調整 */
 }
 
 /* メニューバーの設定 */
@@ -122,17 +122,17 @@ p.right{
 /* 検索してifの中 */
 /* 記事部分 */
 article{
-    width: 74%;
+    width: 60%;
 }
 /* サイドバー */
 aside{
     width: 22%;
 }
-/* .news-contents{
+.news-contents{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-} */
+}
 
 
 .post-info{
@@ -176,4 +176,12 @@ aside{
 /* 本の概要 */
 .bookOverview{
     border-bottom: 1px solid chocolate;
+}
+
+/* サブタイトル */
+.sub-title{
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
 }
