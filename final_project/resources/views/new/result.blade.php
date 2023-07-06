@@ -46,26 +46,12 @@
             </tr>
             <tr>
             <td>本の概要</td>
-<<<<<<< HEAD
             </tr>
             <tr>
                 <td>{{$result->info}}</td>
             </tr>
             
             </table>
-=======
-            <td></td>
-        </tr>
-        <tr>
-            <td>返却日時</td>
-            <td></td>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-    
->>>>>>> 62d9724183b8fc4396b5c6f2935f11194fc6911c
 
         @endforeach
         </div>
