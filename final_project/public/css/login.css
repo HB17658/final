@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+@keyframes bounce {
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+
+
 .title {
     position: relative;
     font-size: 50px;
@@ -39,6 +52,10 @@
     background-color: rgba(255, 255, 255, 0.550);
     padding-bottom: 5px;
 }
+.fa-bounce {
+    animation: bounce 1s ;
+}
+
 
 .item {
     display: inline-block; /* pタグをインラインブロック要素に変更 */
