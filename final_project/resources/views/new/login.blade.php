@@ -12,14 +12,14 @@
 <body>
     <h1 class="title">書籍検索</h1>
     <div class="loginForm">
-    <h2 class="subTitle">ログインフォーム</h2>
+    <h2 class="subTitle"><span><i class="fa fa-chevron-circle-right"></i></span> ログインフォーム</h2>
         <form class="form" action="new/result" method="post">
         @csrf
             <p class="item"><span><i class="fa fa-user"></i></span> ログインID</p>
             <div class="inputMargin">
             <input type="text" name="id" placeholder="ログインIDを入力して下さい" required></div>
             <p class="item"><span><i class="fa fa-lock"></i></span> パスワード</p>
-            <input type="password" name="password" placeholder="パスワードを入力して下さい" required> 
+            <input type="password" name="password" placeholder="パスワードを入力して下さい" required>
             <input type="submit" class="loginBtn" value="ログイン">
         </form>
         </div>
