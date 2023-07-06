@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Book;
 use App\Models\Emp;
 
+use Illuminate\Support\Facades\Session;
+
 class PrController extends Controller
 {
     public function search(Request $r)
@@ -22,9 +24,11 @@ class PrController extends Controller
             $r->session()->put('id', $id);
             $r->session()->put('password', $password);
             //ログインの認証
-            $id = Emp::where('emp_no','=',$id);
-            $pass = Emp::where('pass','=',$password);
-            if($id->count() ===0&&$pass->count() ===0 ){
+            $dbid = Emp::where('emp_no','=',$id);
+            $dbpass = Emp::where('pass','=',$password);
+            if($dbid->count() ===0&&$dbpass->count() ===0 ){
+                $r->session()->forget('id');
+                $r->session()->forget('password');
                 return redirect()->back();
             }else{
             $book = Book::where('title','LIKE', "%%")
@@ -36,9 +40,15 @@ class PrController extends Controller
             return view('new/result',$data);}
         
         }
-
+        
         $id = $r->session()->get('id');
         $password = $r->session()->get('password');
+
+        if(empty($id)&&empty($password)){
+            $r->session()->forget('id');
+            $r->session()->forget('password');
+            return redirect('/');
+        }
 
         $book = Book::where('title','LIKE', "%$searchword%")
         ->orWhere('author_name', 'LIKE', "%$searchword%")
@@ -60,14 +70,23 @@ class PrController extends Controller
 
     public function logout(Request $r)
     {
-        $r->request->remove('id');
-        $r->request->remove('password');
-        return view('new/login');
+        $r->session()->forget('id');
+        $r->session()->forget('password');
+        return redirect('/')->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
     }
-    // public function searchBook(Request $req)
-    // {
-    //     $word = $req->searchword;
+    
+    public function info(Request $r){
+        
+        $isbn = $r->query('name');
+        $book = Book::where('ISBN','=', "$isbn")
+        ->get();
+        $data = [
+            'result'=>$book
+        ];
 
-    //     return view('new/result',$data);
-    // }
+        dd($isbn);
+        return view('new/book',$data);
+    }
+
+
 }

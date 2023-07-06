@@ -85,7 +85,7 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 70px;
     background: #432;
     text-align: center;
     padding: 26px 0;
@@ -116,7 +116,25 @@ p.right{
     text-align: right;
 }
 
+
+
+
 /* 検索してifの中 */
+/* 記事部分 */
+article{
+    width: 74%;
+}
+/* サイドバー */
+aside{
+    width: 22%;
+}
+/* .news-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+} */
+
+
 .post-info{
     position: relative;
     padding-top: 4px;
@@ -147,6 +165,15 @@ p.right{
     font-weight: normal;
     margin-left: 120px;
 }
-article{
-    
+/* 本のタイトル */
+.booktitle{
+    font-size: 2rem;
+}
+/* 本の著者*/
+.bookauthor{
+    color: #387ccc;
+}
+/* 本の概要 */
+.bookOverview{
+    border-bottom: 1px solid chocolate;
 }
