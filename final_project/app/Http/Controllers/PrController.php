@@ -21,13 +21,20 @@ class PrController extends Controller
 
             $r->session()->put('id', $id);
             $r->session()->put('password', $password);
+            //ログインの認証
+            $id = Emp::where('emp_no','=',$id);
+            $pass = Emp::where('pass','=',$password);
+            if($id->count() ===0&&$pass->count() ===0 ){
+                return redirect()->back();
+            }else{
             $book = Book::where('title','LIKE', "%%")
             ->orWhere('author_name', 'LIKE', "%%")
             ->get();
             $data = [
             'results'=>$book
             ];
-            return view('/new/result',$data);
+            return view('new/result',$data);}
+        
         }
 
         $id = $r->session()->get('id');
