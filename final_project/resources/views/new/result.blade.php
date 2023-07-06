@@ -24,6 +24,7 @@
     
     </form>
     @if(isset($msg))
+    <h2>検索結果一覧</h2>
     <p>{{$msg}}</p>
     @endif
     @if(isset($results))
@@ -36,39 +37,45 @@
         
         <!-- <h2>書籍一覧</h2> -->
         @foreach($results as $result)
-                <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
-                <table>
-        <tr><th colspan="3">{{$result->title}}</th></tr>
-        <tr><th colspan="3">{{$result->author_name}}</th></tr>
-        <tr>
-            <td rowspan="4"><img src="" alt="50" height="200" width="150"></td>
-        </tr>
-        <tr>
+                    <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
+                    <table>
+            <tr><th colspan="3">{{$result->title}}</th></tr>
+            <tr><th colspan="3">{{$result->author_name}}</th></tr>
+            <tr>
+                <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
+            </tr>
+            <tr>
             <td>本の概要</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>返却日時</td>
-            <td></td>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-    
+            </tr>
+            <tr>
+                <td>{{$result->info}}</td>
+            </tr>
+            
+            </table>
 
         @endforeach
+        </div>
     @elseif(isset($searchData))
         <h2>検索結果一覧</h2>
+        <div class = "content-wrapper">
             @foreach($searchData as $r)
-                <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
+                    <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
                 <table>
-                    <tr><th colspan="3">{{$result->title}}</th></tr>
-                    <tr><th colspan="3">{{$result->author_name}}</th></tr>
-                    <tr>
-                        <td rowspan="4"><img src="" alt="50" height="200" width="150"></td>
-                    </tr>
+                <tr><th colspan="3">{{$r->title}}</th></tr>
+                <tr><th colspan="3">{{$r->author_name}}</th></tr>
+                <tr>
+                    <td rowspan="4"><img src="{{ asset($r->image)}}" alt="50" height="200" width="150"></td>
+                </tr>
+                <tr>
+                <td>本の概要</td>
+                </tr>
+                <tr>
+                    <td>{{$r->info}}</td>
+                </tr>
+                
+                </table>
             @endforeach
+            </div>
     @endif
 
 
