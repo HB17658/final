@@ -78,6 +78,11 @@ body{
 
 /* フッター */
 footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
     background: #432;
     text-align: center;
     padding: 26px 0;
@@ -86,4 +91,20 @@ footer p{
     color: #fff;
     font-size: 0.875rem;
     font-family: 'M PLUS 1p', sans-serif;
+}
+
+/* ログアウトボタン */
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #9966FF;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #CC99FF;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
 }

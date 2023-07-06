@@ -44,16 +44,8 @@ form {
     padding-left: 20px; 
 }
 
-
-
-body {
-    font-family: 'M PLUS 1p', sans-serif;
-    background-image: url(../image/coffee.webp);
-    height: 250px;
-    margin-bottom: 40px;
-}
-
 body{
+    font-family: 'M PLUS 1p', sans-serif;
     background-image: url(../image/coffee.webp);
     background-repeat: no-repeat;
     background-size: cover;

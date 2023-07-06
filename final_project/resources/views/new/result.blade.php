@@ -10,7 +10,7 @@
 <body>
 <div id="new">
     <h1 class="title">書籍検索</h1>
-    <a href="/">ログアウト</a>
+    <a href="/" class="btn btn--orange">ログアウト</a>
     <form action="/new/result" method="post" >
     @csrf
     <div class="text-center">
@@ -55,16 +55,18 @@
                 <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
             @endforeach
     @endif
-    <!-- フッター -->
-    <footer>
-        <div>
-            <p><small>&copy;2023 ICTエンジニア科</small></p>
-        </div>
-    </footer>
+
 
     @if(isset($id))
     <p>{{$id}}</p>
     <p>{{$password}}</p>
     @endif
+    
+        <!-- フッター -->
+        <footer>
+            <div>
+                <p><small>&copy;2023 ICTエンジニア科</small></p>
+            </div>
+        </footer>
 </body>
 </html>
