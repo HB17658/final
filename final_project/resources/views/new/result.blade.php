@@ -47,12 +47,13 @@
         <div class = "content-wrapper">
             @foreach($results as $result)
             <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
+            
             <table>
-                <tr><th colspan="3" class="booktitle">{{$result->title}}</th></tr>
+                
+                <tr><th colspan="3" class="booktitle">{{$result->title}}</a></th></tr>
                 <tr><th colspan="3" class="bookauthor">{{$result->author_name}}</th></tr>
-                <tr>
-                    <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="250" width="250"></td>
-                </tr>
+                <tr><td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="250" width="250"></a></td></tr>
+               
                 <tr>
                 <td class="bookOverview">本の概要</td>
                 </tr>
@@ -61,6 +62,8 @@
                 </tr>
                 
                 </table>
+            
+            
                 <br>
             @endforeach
         </div>

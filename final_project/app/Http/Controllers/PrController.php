@@ -74,10 +74,19 @@ class PrController extends Controller
         $r->session()->forget('password');
         return redirect('/')->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
     }
-    // public function searchBook(Request $req)
-    // {
-    //     $word = $req->searchword;
+    
+    public function info(Request $r){
+        
+        $isbn = $r->query('name');
+        $book = Book::where('ISBN','=', "$isbn")
+        ->get();
+        $data = [
+            'result'=>$book
+        ];
 
-    //     return view('new/result',$data);
-    // }
+        dd($isbn);
+        return view('new/book',$data);
+    }
+
+
 }

@@ -34,3 +34,5 @@ Route::get('new/result',function(Request $r){
     $r->session()->forget('password');
     return redirect('/');
 });
+//概要ページ
+Route::get('new/book',[PrController::class,'info']);
