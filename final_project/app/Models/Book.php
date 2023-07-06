@@ -12,6 +12,10 @@ class Book extends Model
     public function genre(){
         return $this->belongsTo(Genre::class,'genre_code','genre_code');
     }
+    
+    public function rentals(){
+        return $this->hasMany(Rental::class);
+    }
 }
 
 
