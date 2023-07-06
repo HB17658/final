@@ -21,7 +21,7 @@
     background-color: #387ccc;
 }
 .content-wrapper {
-    min-height: calc(110vh - 100px); /*フッターの調整 */
+    min-height: calc(130vh - 100px); /*フッターの調整 */
 }
 
 /* メニューバーの設定 */

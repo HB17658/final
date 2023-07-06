@@ -21,6 +21,7 @@
 <div id="new">
     <h1 class="title">書籍検索</h1>
     <p class="right"><a href="/new/login" class="btn btn--orange" >ログアウト</a></p>
+    <p ><a href="/new/store">新規登録</a></p>
     <form action="/new/result" method="post" >
     @csrf
     <div class="text-center">
@@ -47,22 +48,23 @@
         <div class = "content-wrapper">
             @foreach($results as $result)
             <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
-            
-            <table>
+            <form action="/new/info" method="GET" >
+                <table>
                 
-                <tr><th colspan="3" class="booktitle">{{$result->title}}</a></th></tr>
-                <tr><th colspan="3" class="bookauthor">{{$result->author_name}}</th></tr>
-                <tr>
-                    <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
-                </tr>
-                <tr>
-                <td class="bookOverview">本の概要</td>
-                </tr>
-                <tr>
-                    <td>{{$result->info}}</td>
-                </tr>
+                    <tr><th colspan="3" class="booktitle">{{$result->title}}</a></th></tr>
+                    <tr><th colspan="3" class="bookauthor">{{$result->author_name}}</th></tr>
+                    <tr>
+                        <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
+                    </tr>
+                    <tr>
+                    <td class="bookOverview">本の概要</td>
+                    </tr>
+                    <tr>
+                        <td>{{$result->info}}</td>
+                    </tr>
                 
                 </table>
+            </form>
             
             
                 <br>
