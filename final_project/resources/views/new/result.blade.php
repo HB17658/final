@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/base.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
 </head>
 <script>
     // ページ遷移の制御
@@ -16,6 +17,7 @@
     });
 </script>
 <body>
+    <!-- ヘッダー検索 -->
 <div id="new">
     <h1 class="title">書籍検索</h1>
     <p class="right"><a href="/new/login" class="btn btn--orange" >ログアウト</a></p>
@@ -44,15 +46,15 @@
         
         <div class = "content-wrapper">
             @foreach($results as $result)
-                        <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
-                        <table>
-                <tr><th colspan="3">{{$result->title}}</th></tr>
-                <tr><th colspan="3">{{$result->author_name}}</th></tr>
+            <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
+            <table>
+                <tr><th colspan="3" class="booktitle">{{$result->title}}</th></tr>
+                <tr><th colspan="3" class="bookauthor">{{$result->author_name}}</th></tr>
                 <tr>
-                    <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
+                    <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="250" width="250"></td>
                 </tr>
                 <tr>
-                <td>本の概要</td>
+                <td class="bookOverview">本の概要</td>
                 </tr>
                 <tr>
                     <td>{{$result->info}}</td>
@@ -63,12 +65,18 @@
             @endforeach
         </div>
     @elseif(isset($searchData))
-        <h2>検索結果一覧</h2>
+        <!-- タイトルヘッダー -->
+        <header class="post-info">
+            <h2 class="post-title">検索の詳細</h2>
+            <p class="post-data">検索 <span>一覧</span></p>
+        </header>
+
+        <!-- <h2>検索結果一覧</h2> -->
         <div class = "content-wrapper">
             @foreach($searchData as $r)
                     <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
                 <table>
-                <tr><th colspan="3">{{$r->title}}</th></tr>
+                <tr><th colspan="3" class="booktitle">{{$r->title}}</th></tr>
                 <tr><th colspan="3">{{$r->author_name}}</th></tr>
                 <tr>
                     <td rowspan="4"><img src="{{ asset($r->image)}}" alt="50" height="200" width="150"></td>

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('image',200);
             $table->string('company',250);
             $table->string('genre_code',25);
-            $table->integer('year');
+            $table->date('year')->default(date('Y-m-d'));
             $table->timestamps();
         });
     }
