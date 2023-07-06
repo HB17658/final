@@ -74,9 +74,10 @@ input[type="password"] {
     height: 30px;
 }
 
-/*検索ボタンのサイズ */
+/*ログインボタンのサイズ */
 input.loginBtn {
     width: 80px;
     height: 32px;
-
+    font-weight: 500;
+    background-color: rgba(252, 165, 4, 0.692);
 }
