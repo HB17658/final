@@ -24,10 +24,9 @@
     
     </form>
     @if(isset($msg))
-    <h2>検索結果一覧</h2>
-    <p>{{$msg}}</p>
-    @endif
-    @if(isset($results))
+        <h2>検索結果一覧</h2>
+        <p>{{$msg}}</p>
+    @elseif(isset($results))
     
         <!-- タイトルヘッダー -->
         <header class="post-info">
@@ -35,25 +34,25 @@
             <p class="post-data">書籍 <span>一覧</span></p>
         </header>
         
-        <!-- <h2>書籍一覧</h2> -->
-        @foreach($results as $result)
-                    <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
-                    <table>
-            <tr><th colspan="3">{{$result->title}}</th></tr>
-            <tr><th colspan="3">{{$result->author_name}}</th></tr>
-            <tr>
-                <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
-            </tr>
-            <tr>
-            <td>本の概要</td>
-            </tr>
-            <tr>
-                <td>{{$result->info}}</td>
-            </tr>
-            
-            </table>
+        <div class = "content-wrapper">
+            @foreach($results as $result)
+                        <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
+                        <table>
+                <tr><th colspan="3">{{$result->title}}</th></tr>
+                <tr><th colspan="3">{{$result->author_name}}</th></tr>
+                <tr>
+                    <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
+                </tr>
+                <tr>
+                <td>本の概要</td>
+                </tr>
+                <tr>
+                    <td>{{$result->info}}</td>
+                </tr>
+                
+                </table>
 
-        @endforeach
+            @endforeach
         </div>
     @elseif(isset($searchData))
         <h2>検索結果一覧</h2>
@@ -75,7 +74,7 @@
                 
                 </table>
             @endforeach
-            </div>
+        </div>
     @endif
 
 
