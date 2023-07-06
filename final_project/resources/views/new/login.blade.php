@@ -19,6 +19,7 @@
             <input type="password" name="password" placeholder="パスワードを入力して下さい" required> 
             <input type="submit" class="loginBtn" value="ログイン">
         </form>
+
 <!-- フッター -->
 <footer>
         <div>
