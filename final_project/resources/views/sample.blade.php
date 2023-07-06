@@ -1,3 +1,17 @@
+<?php
+
+$url = 'https://api.openbd.jp/v1/coverage';
+
+// APIからデータを取得
+$response = file_get_contents($url);
+
+// JSONデータを配列に変換
+$data = json_decode($response, true);
+
+// 取得したデータを確認
+var_dump($data);
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -32,38 +46,7 @@
             @endforeach
     @endif
 
-    <?php
 
-    $url = 'https://api.openbd.jp/v1/get';
-    
-    // HTTP GETリクエストを送信
-    $response = file_get_contents($url);
-    
-    // レスポンスデータをJSONから連想配列に変換
-    $data = json_decode($response, true);
-    
-    // 書籍情報を表示
-    foreach ($data as $book) {
-        echo 'タイトル: ' . $book['summary']['title'] . '<br>';
-        echo '著者: ' . $book['summary']['author'] . '<br>';
-        echo '出版社: ' . $book['summary']['publisher'] . '<br>';
-        echo '<hr>';
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    ?>
     <!-- フッター -->
     <footer>
         <div>

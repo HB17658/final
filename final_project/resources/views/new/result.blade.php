@@ -26,13 +26,13 @@
     @if(isset($msg))
     <p>{{$msg}}</p>
     @endif
-    @if(isset($data))
+    @if(isset($results))
         <h2>書籍一覧</h2>
-        @foreach($data as $d)
+        @foreach($results as $result)
                 <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
                 <table>
-        <tr><th colspan="3">タイトル後で変える</th></tr>
-        <tr><th colspan="3">作者(後で変える)</th></tr>
+        <tr><th colspan="3">{{$result->title}}</th></tr>
+        <tr><th colspan="3">{{$result->author_name}}</th></tr>
         <tr>
             <td rowspan="4"><img src="" alt="50" height="200" width="150"></td>
         </tr>

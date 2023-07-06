@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Book;
+use App\Models\Emp;
 
 class PrController extends Controller
 {
@@ -47,7 +51,12 @@ class PrController extends Controller
         
         
         //入力された文字列と一致する書籍情報をすべて取得し1つずつ取得し、連想配列に入れる。
-        
+        $model = new Book();
+        $data=[
+            'results' => $model->search($searchword)
+        ];
+        //$books = DB::select('select * from books where active = ?', [$searchword]);
+
         
         
         //データベースから書籍をすべて抽出
@@ -59,7 +68,7 @@ class PrController extends Controller
         //一致したキーワードがある書籍情報を連想配列に格納
         //$searchData = [];
         //retrunでは$searchDataを返す
-        return view('new/result',compact('id','password'));
+        return view('new/result',$data);
 
     }
 
