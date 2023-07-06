@@ -26,9 +26,16 @@
     @if(isset($msg))
     <h2>検索結果一覧</h2>
     <p>{{$msg}}</p>
-    @elseif(isset($results))
-        <h2>書籍一覧</h2>
-        <div class = "content-wrapper">
+    @endif
+    @if(isset($results))
+    
+        <!-- タイトルヘッダー -->
+        <header class="post-info">
+            <h2 class="post-title">書籍の詳細</h2>
+            <p class="post-data">書籍 <span>一覧</span></p>
+        </header>
+        
+        <!-- <h2>書籍一覧</h2> -->
         @foreach($results as $result)
                     <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
                     <table>
@@ -39,12 +46,26 @@
             </tr>
             <tr>
             <td>本の概要</td>
+<<<<<<< HEAD
             </tr>
             <tr>
                 <td>{{$result->info}}</td>
             </tr>
             
             </table>
+=======
+            <td></td>
+        </tr>
+        <tr>
+            <td>返却日時</td>
+            <td></td>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+>>>>>>> 62d9724183b8fc4396b5c6f2935f11194fc6911c
 
         @endforeach
         </div>
