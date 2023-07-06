@@ -12,6 +12,8 @@
         <input type="number" name="ISBN">
         <input type="submit" value="登録">
     </form>
+
+    <a href="/new/result">前の画面に戻る</a>
     
 </body>
 </html>

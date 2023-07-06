@@ -29,11 +29,12 @@ Route::post('new/result',[PrController::class,'search']);
 //ログアウト
 Route::get('new/login',[PrController::class,'logout']);
 //ログインせずにresultへアクセスした場合はログイン画面へ戻す
-Route::get('new/result',function(Request $r){
-    $r->session()->forget('id');
-    $r->session()->forget('password');
-    return redirect('/');
-});
+// Route::get('new/result',function(Request $r){
+//     // $r->session()->forget('id');
+//     // $r->session()->forget('password');
+//     return view('new/result');
+// });
+Route::get('new/result',[PrController::class,'search']);
 //概要ページ
 Route::get('new/book',[PrController::class,'info']);
 

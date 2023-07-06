@@ -88,22 +88,22 @@ class PrController extends Controller
         return view('new/book',$data);
     }
 
-    public function bookStore(Request $req)
+    public function store(Request $req)
     {
         //入力されたISBN情報
         $value = $req->ISBN;
         // 既存の書籍を検索
         $existingBook = Book::where('ISBN', $value)->first();
         if ($existingBook) {
-            $manage = new Book();
-            $manage->status_id = 1;
-            $manage->book_id = $existingBook->id;
-            $manage->save();
+            //$manage = new Book();
+            //$manage->status_id = 1;
+            //$manage->book_id = $existingBook->id;
+            //$manage->save();
             $message = "入力されたISBNの本はすでに登録されています";
-            $data = [
-                'message'=>$message
-            ];
-            return view('db.bookStore',$data);
+            //$data = [
+            //    'message'=>$message
+            //];
+            return view('new/store');
         }
         //Bookインスタンスの作成
         $book = new Book();
@@ -137,15 +137,17 @@ class PrController extends Controller
         $publisher = $get_summary['publisher'];
         $price = isset($get_summary['price']) ? $get_summary['price'] : null;
         //ここからJSONデータからDBに登録
-        $book->booktitle = $book_name;
-        $book->publisher = $publisher;
-        $book->author = $author;
-        $book->book_count = 0;
-        $book->price = is_null($price) ? 0 : $price;
-        $book->img = "";
-        $book->img_pass = $image_url;
-        $book->publising_year = $make_year;
-        $book->text_content = $get_content;
+        $book->title = $book_name;
+        $book->company = $publisher;
+        $book->author_name = $author;
+        //$book->book_count = 0;
+        //$book->price = is_null($price) ? 0 : $price;
+        //$book->img = "";
+        $book->image = $image_url;
+        $book->year = $make_year;
+        $book->subtitle = null;
+        $book->genre_code = null;
+        $book->info = $get_content;
         $book->ISBN = $isbn;
         $book->save();
         $data = [
@@ -159,10 +161,10 @@ class PrController extends Controller
         ];
         $author= $book->author;
         //ここからManageテーブルに登録
-        $manage = new Book();
-        $manage->status_id = 1;
-        $manage->book_id = $book->id;
-        $manage->save();
+        // $manage = new Book();
+        // $manage->status_id = 1;
+        // $manage->book_id = $book->id;
+        // $manage->save();
         return view('new/store');
     }
 
