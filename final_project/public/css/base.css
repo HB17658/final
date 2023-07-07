@@ -134,7 +134,8 @@ aside{
 }
 
 .news-contents{
-    /* float: right;右に寄せる */
+    /* 右に寄せる */
+    /* float: right; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px; 
