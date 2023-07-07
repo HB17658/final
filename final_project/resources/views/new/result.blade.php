@@ -21,7 +21,7 @@
 <div id="new">
     <h1 class="title">書籍検索</h1>
     <p class="right"><a href="/new/login" class="btn btn--orange" >ログアウト</a></p>
-    <p ><a href="/new/store">新規登録</a></p>
+    
     <form action="/new/result" method="post" >
     @csrf
     <div class="text-center">
@@ -31,8 +31,19 @@
     </p>
     </div>
     </div>
-    
-    
+
+    <!-- メニューバー -->
+    <nav>
+        <ul>
+            <li><a href="" class="menu">トップページ</a></li>
+            <li><a href="" class="menu">詳細検索</a></li>
+            <li><a href="" class="menu">履歴</a></li>
+            <li><a href="" class="menu">マイページ</a></li>
+            <li><a href="/new/store">新規登録</a></li>
+            <li><a href="" class="menu">ヘルプ</a></li>
+        </ul>
+    </nav>
+    <!-- メニューバー終わり -->
     </form>
     @if(isset($msg))
         <h2>検索結果一覧</h2>
