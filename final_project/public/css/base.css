@@ -20,9 +20,10 @@
     height: 5px;
     background-color: #387ccc;
 }
-.content-wrapper {
-    min-height: calc(150vh - 100px); /*フッターの調整 */
-}
+/*フッターの調整 いらない？*/
+/* .content-wrapper {
+    min-height: calc(150vh - 100px); 
+} */
 
 /* メニューバーの設定  */
 nav ul{
@@ -31,6 +32,7 @@ margin: 0 auto;
 padding: 0 ;
 width: 80%;
 text-align: center;
+margin-top: -25px;
 }
 nav li{
 display: table-cell;
@@ -75,8 +77,8 @@ body{
 }
 #new{
     background-image: url(../image/coffee.webp);
-    height: 250px;
-    margin-bottom: 40px;
+    height: 280px;
+    margin-bottom: 30px;
 }
 
 /* フッター */
@@ -121,16 +123,15 @@ p.right{
 
 /* 検索してifの中 */
 
-/* 記事部分 */
+/* メイン部分 */
 article{
-    width: 60%;
-    
+    width: 70%;
 }
 /* サイドバー */
 aside{
     width: 22%;
 }
-.wrapper{
+.news-contents{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
