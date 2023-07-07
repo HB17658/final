@@ -133,7 +133,7 @@ class PrController extends Controller
         $author = $get_summary['author'];
         $image_url = $get_summary['cover'];
         if($image_url == ""){
-            $image_url = null;
+            $image_url = "image/nonomura.jpg";
         }
         $make_year = $get_summary['pubdate'];
         $make_year = intval(str_replace('-', '', $get_summary['pubdate']));
