@@ -144,9 +144,8 @@ class PrController extends Controller
         //$book->price = is_null($price) ? 0 : $price;
         //$book->img = "";
         $book->image = $image_url;
+        $make_year = substr($make_year, 0, 4) . '/' . substr($make_year, 4, 2) . '/' . substr($make_year, 6, 2);
         $book->year = $make_year;
-        $book->subtitle = null;
-        $book->genre_code = null;
         $book->info = $get_content;
         $book->ISBN = $isbn;
         $book->save();

@@ -20,17 +20,19 @@
     height: 5px;
     background-color: #387ccc;
 }
-.content-wrapper {
-    min-height: calc(150vh - 100px); /*フッターの調整 */
-}
+/*フッターの調整 いらない？*/
+/* .content-wrapper {
+    min-height: calc(150vh - 100px); 
+} */
 
-/* メニューバーの設定 */
-/* nav ul{
+/* メニューバーの設定  */
+nav ul{
 display: table;
 margin: 0 auto;
 padding: 0 ;
 width: 80%;
 text-align: center;
+margin-top: -25px;
 }
 nav li{
 display: table-cell;
@@ -52,7 +54,7 @@ border-bottom: 3px solid #92D050;
 nav li:hover{
 color: #E7DA66;
 border-bottom: 3px solid #F0E475;
-} */
+}
 
 /*検索ボタンのサイズ */
 input.searchbtn {
@@ -75,8 +77,8 @@ body{
 }
 #new{
     background-image: url(../image/coffee.webp);
-    height: 250px;
-    margin-bottom: 40px;
+    height: 280px;
+    margin-bottom: 30px;
 }
 
 /* フッター */
@@ -99,17 +101,17 @@ footer p{
 /* ログアウトボタン */
 .btn--orange,
 a.btn--orange {
-  color: #fff;
-  background-color: #9966FF;
+    color: #fff;
+    background-color: #9966FF;
 }
 .btn--orange:hover,
 a.btn--orange:hover {
-  color: #fff;
-  background: #CC99FF;
+    color: #fff;
+    background: #CC99FF;
 }
 
 a.btn--radius {
-   border-radius: 100vh;
+    border-radius: 100vh;
 }
 /* 右に寄せる */
 p.right{
@@ -120,9 +122,10 @@ p.right{
 
 
 /* 検索してifの中 */
-/* 記事部分 */
+
+/* メイン部分 */
 article{
-    width: 60%;
+    width: 70%;
 }
 /* サイドバー */
 aside{
@@ -133,6 +136,7 @@ aside{
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
 
 
 .post-info{

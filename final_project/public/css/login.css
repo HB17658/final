@@ -5,7 +5,7 @@
     transform: translateY(0);
     }
     50% {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
     }
     100% {
     transform: translateY(0);
@@ -39,6 +39,7 @@
     margin: auto;
     max-width: 30rem;
     padding: 1rem;
+    border-radius: 10px;
 }
 
 .subTitle{
@@ -51,9 +52,10 @@
     font-weight: 500;
     background-color: rgba(255, 255, 255, 0.550);
     padding-bottom: 5px;
+    border-radius: 10px;
 }
 .fa-bounce {
-    animation: bounce 1s ;
+    animation: bounce 1s infinite ;
 }
 
 
@@ -66,11 +68,13 @@
     font-weight: 500;
     text-align: center;
     background-color: rgba(252, 173, 4, 0.692);
+    border-radius: 10px;
 }
 
 
 .inputMargin{
     margin-bottom: 15px;
+    border-radius: 30px;
 }
 
 form {
@@ -88,11 +92,13 @@ body{
 input[type="text"] {
     width: 100%;
     height: 40px;
+    border-radius: 10px;
 }
 
 input[type="password"] {
     width: 100%;
     height: 40px;
+    border-radius: 10px;
 }
 
 /*ログインボタン*/
@@ -101,9 +107,10 @@ input.loginBtn {
     line-height: 3rem;
     font-weight: 500;
     background-color: rgba(4, 161, 252, 0.692);
+    border-radius: 10px;
     transition: background-color 0.3s ease; /* 色の変化を滑らかにするためのトランジションを追加 */
 }
 
 input.loginBtn:hover {
-    background-color: rgba(4, 161, 252, 1); /* カーソルがボタン上に来た時の背景色 */
+    background-color: #0bd; /* カーソルがボタン上に来た時の背景色 */
 }

@@ -21,7 +21,7 @@
 <div id="new">
     <h1 class="title">書籍検索</h1>
     <p class="right"><a href="/new/login" class="btn btn--orange" >ログアウト</a></p>
-    <p ><a href="/new/store">新規登録</a></p>
+    
     <form action="/new/result" method="post" >
     @csrf
     <div class="text-center">
@@ -31,8 +31,20 @@
     </p>
     </div>
     </div>
-    
-    
+
+    <!-- メニューバー -->
+    <nav>
+        <ul>
+            <li><a href="" class="menu">トップページ</a></li>
+            <li><a href="" class="menu">詳細検索</a></li>
+            <li><a href="" class="menu">履歴</a></li>
+            <li><a href="" class="menu">マイページ</a></li>
+            <li><a href="/new/store">新規登録</a></li>
+            <li><a href="" class="menu">ヘルプ</a></li>
+        </ul>
+    </nav>
+    <!-- メニューバー終わり -->
+    <hr>
     </form>
     @if(isset($msg))
         <h2>検索結果一覧</h2>
@@ -44,11 +56,15 @@
             <h2 class="post-title">書籍の詳細</h2>
             <p class="post-data">書籍 <span>一覧</span></p>
         </header>
+
+        
+        
         
         <div class ="news-contents wrapper">
-            
             @foreach($results as $result)
-            <article><!-- メイン部分 -->
+            <!-- メイン部分 -->
+            
+            <article>
             <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
             <form action="/new/info" method="GET" >
                 <table>
@@ -67,13 +83,9 @@
                 
                 </table>
             </form>
-            
             </article>
-            
-            </div>
-                <!-- </table>
-                <br> この2行いらない？-->
             @endforeach
+            
             <aside><!-- サブ部分 -->
                 <h3 class="sub-title">カテゴリー</h3>
                 <ul>
@@ -82,11 +94,11 @@
                     <li><a href="">おすすめ２</a></li>
                     <li><a href="">おすすめ３</a></li>
                 </ul>
-
                 <h3 class="sub-title">書籍紹介動画</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WGZ2Qm_NcEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-            </aside>
+            </aside><!-- サブの終わり -->
+            
+            </div>
         <!-- </div>元の位置 -->
     @elseif(isset($searchData))
         <!-- タイトルヘッダー -->
