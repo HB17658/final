@@ -54,7 +54,7 @@
     line-height: 1rem;
     color: rgba(245, 245, 245, 0.795);
     font-weight: 500;
-    font-size: x-large;
+    font-size: 27px;
     /* background-color: rgba(255, 255, 255, 0.550); */
     border-radius: 10px;
 }
@@ -110,12 +110,12 @@ input.loginBtn {
     margin-top: 10px;
     line-height: 3rem;
     font-weight: 500;
-    background-color: rgba(4, 161, 252, 0.692);
+    background-color: rgba(4, 161, 252, 0.700);
     border-radius: 10px;
     color: #dddddd;
     transition: background-color 0.5s ease; /* 色の変化を滑らかにするためのトランジションを追加 */
 }
 
 input.loginBtn:hover {
-    background-color: rgba(0, 102, 255, 0.849); /* カーソルがボタン上に来た時の背景色 */
+    background-color: rgba(0, 102, 255, 0.830); /* カーソルがボタン上に来た時の背景色 */
 }
