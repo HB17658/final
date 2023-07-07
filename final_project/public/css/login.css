@@ -34,11 +34,16 @@
     background-color: #387ccc;
 }
 .loginForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30rem;
     background-color: #222222b4;
     margin: auto;
-    max-width: 32rem;
     padding: 2.5rem;
     border-radius: 10px;
+    
 }
 
 .subTitle{
@@ -46,11 +51,11 @@
     width: 100%;
     text-decoration: none;
     text-align: center; 
-    line-height: 3rem;
-    color: #222222;
+    line-height: 1rem;
+    color: rgba(245, 245, 245, 0.795);
     font-weight: 500;
     font-size: x-large;
-    background-color: rgba(255, 255, 255, 0.550);
+    /* background-color: rgba(255, 255, 255, 0.550); */
     border-radius: 10px;
 }
 .fa-bounce {
@@ -59,21 +64,20 @@
 
 
 .item {
-    display: inline-block; /* pタグをインラインブロック要素に変更 */
+    display: contents; /* pタグをインラインブロック要素に変更 */
     width: 100%; /* 横幅を100%に設定 */
     box-sizing: border-box; /* ボックスモデルの計算にborderとpaddingを含める */
-    padding: 10px;
-    color: #222222;
-    font-weight: 500;
-    text-align: center;
-    background-color: rgba(252, 173, 4, 0.692);
-    border-radius: 10px;
+    /* padding: 10px; */
+    color: rgba(245, 245, 245, 0.795);
+    font-weight: 400;
+    text-align: left;
+    /* background-color: rgba(252, 173, 4, 0.692); */
+    /* border-radius: 10px; */
 }
 
 
 .inputMargin{
-    margin-bottom: 15px;
-    border-radius: 30px;
+    margin-bottom: 30px;
 }
 
 form {
@@ -103,13 +107,15 @@ input[type="password"] {
 /*ログインボタン*/
 input.loginBtn {
     width: 100%;
+    margin-top: 10px;
     line-height: 3rem;
     font-weight: 500;
     background-color: rgba(4, 161, 252, 0.692);
     border-radius: 10px;
+    color: #dddddd;
     transition: background-color 0.5s ease; /* 色の変化を滑らかにするためのトランジションを追加 */
 }
 
 input.loginBtn:hover {
-    background-color: #0bd; /* カーソルがボタン上に来た時の背景色 */
+    background-color: rgba(0, 162, 255, 0.918); /* カーソルがボタン上に来た時の背景色 */
 }
