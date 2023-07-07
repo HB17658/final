@@ -56,11 +56,10 @@
             <h2 class="post-title">書籍の詳細</h2>
             <p class="post-data">書籍 <span>一覧</span></p>
         </header>
-
         
         
         
-        <div class ="news-contents wrapper">
+        <!-- <div class ="news-contents wrapper"> -->
             @foreach($results as $result)
             <!-- メイン部分 -->
             
@@ -85,7 +84,7 @@
             </form>
             </article>
             @endforeach
-            
+            <div class = "news-contents">
             <aside><!-- サブ部分 -->
                 <h3 class="sub-title">カテゴリー</h3>
                 <ul>
