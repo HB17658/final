@@ -67,10 +67,10 @@
             </table>
             </article>
             
-            </div>
-                <!-- </table>
-                <br> この2行いらない？-->
+            <!-- </div> -->
+
             @endforeach
+            
             <aside><!-- サブ部分 -->
                 <h3 class="sub-title">カテゴリー</h3>
                 <ul>
@@ -83,7 +83,9 @@
                 <h3 class="sub-title">書籍紹介動画</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WGZ2Qm_NcEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-            </aside>
+            </aside><!-- サブの終わり -->
+            
+            </div>
         <!-- </div>元の位置 -->
     @elseif(isset($searchData))
         <!-- タイトルヘッダー -->
