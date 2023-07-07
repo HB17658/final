@@ -117,5 +117,5 @@ input.loginBtn {
 }
 
 input.loginBtn:hover {
-    background-color: rgba(0, 162, 255, 0.918); /* カーソルがボタン上に来た時の背景色 */
+    background-color: rgba(0, 102, 255, 0.849); /* カーソルがボタン上に来た時の背景色 */
 }
