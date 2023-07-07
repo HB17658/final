@@ -56,11 +56,10 @@
             <h2 class="post-title">書籍の詳細</h2>
             <p class="post-data">書籍 <span>一覧</span></p>
         </header>
-
         
         
         
-        <div class ="news-contents wrapper">
+        <!-- <div class ="news-contents wrapper"> -->
             @foreach($results as $result)
             <!-- メイン部分 -->
             
@@ -85,7 +84,7 @@
             </form>
             </article>
             @endforeach
-            
+            <div class = "news-contents">
             <aside><!-- サブ部分 -->
                 <h3 class="sub-title">カテゴリー</h3>
                 <ul>
@@ -108,10 +107,10 @@
         </header>
 
         <!-- <h2>検索結果一覧</h2> -->
-        <div class = "content-wrapper">
+        
             @foreach($searchData as $r)
                     <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
-                <br>
+                <article>
                 <table>
                 <tr><th colspan="3" class="booktitle">{{$r->title}}</th></tr>
                 <tr><th colspan="3" class="bookauthor">{{$r->author_name}}</th></tr>
@@ -127,7 +126,9 @@
                 
                 </table>
                 <br>
+                </article>
             @endforeach
+            <div class = "news-contents">
             <aside><!-- サブ部分 -->
                 <h3 class="sub-title">カテゴリー</h3>
                 <ul>

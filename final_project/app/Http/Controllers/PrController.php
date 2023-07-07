@@ -135,6 +135,9 @@ class PrController extends Controller
         if($image_url == ""){
             $image_url = "image/nonomura.jpg";
         }
+        if($get_content == ""){
+            $get_content = "-------------------------------------------";
+        }
         $make_year = $get_summary['pubdate'];
         $make_year = intval(str_replace('-', '', $get_summary['pubdate']));
         $publisher = $get_summary['publisher'];

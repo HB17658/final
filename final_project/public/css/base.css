@@ -126,15 +126,18 @@ p.right{
 /* メイン部分 */
 article{
     width: 70%;
+    
 }
 /* サイドバー */
 aside{
     width: 22%;
 }
+
 .news-contents{
+    /* float: right;右に寄せる */
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
 }
 
 

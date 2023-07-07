@@ -35,10 +35,9 @@
 }
 .loginForm{
     background-color: #222222b4;
-    min-height: 17rem;
     margin: auto;
-    max-width: 30rem;
-    padding: 1rem;
+    max-width: 32rem;
+    padding: 2.5rem;
     border-radius: 10px;
 }
 
@@ -47,11 +46,11 @@
     width: 100%;
     text-decoration: none;
     text-align: center; 
-    line-height: 3.5rem;
+    line-height: 3rem;
     color: #222222;
     font-weight: 500;
+    font-size: x-large;
     background-color: rgba(255, 255, 255, 0.550);
-    padding-bottom: 5px;
     border-radius: 10px;
 }
 .fa-bounce {
@@ -91,13 +90,13 @@ body{
 
 input[type="text"] {
     width: 100%;
-    height: 40px;
+    height: 50px;
     border-radius: 10px;
 }
 
 input[type="password"] {
     width: 100%;
-    height: 40px;
+    height: 50px;
     border-radius: 10px;
 }
 
@@ -108,7 +107,7 @@ input.loginBtn {
     font-weight: 500;
     background-color: rgba(4, 161, 252, 0.692);
     border-radius: 10px;
-    transition: background-color 0.3s ease; /* 色の変化を滑らかにするためのトランジションを追加 */
+    transition: background-color 0.5s ease; /* 色の変化を滑らかにするためのトランジションを追加 */
 }
 
 input.loginBtn:hover {
