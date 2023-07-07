@@ -73,11 +73,9 @@
                     <tr><th colspan="3" class="bookauthor">{{$result->author_name}}</th></tr>
                     <tr>
                         <td rowspan="3" style="width: 150px">
-                            @if(isset($result->img))
+                         
                             <img src="{{ asset($result->image)}}" alt="50" height="200" width="150">
-                            @else
-                                <img src="https://1.bp.blogspot.com/-M4C13njcTJI/Vy2vvKjPw1I/AAAAAAAA6bI/19R8CwIuS6odsE0EbnjyMV-REIZa3id0QCLcB/s800/book_tosyokan_label_blue.png" alt="50" height="200" width="150">
-                            @endif
+                            
                         </td>
                     </tr>
                     <tr>

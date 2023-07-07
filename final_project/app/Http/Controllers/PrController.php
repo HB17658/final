@@ -133,7 +133,7 @@ class PrController extends Controller
         $author = $get_summary['author'];
         $image_url = $get_summary['cover'];
         if($image_url == ""){
-            $image_url = "image/nonomura.jpg";
+            $image_url = 'https://1.bp.blogspot.com/-M4C13njcTJI/Vy2vvKjPw1I/AAAAAAAA6bI/19R8CwIuS6odsE0EbnjyMV-REIZa3id0QCLcB/s800/book_tosyokan_label_blue.png';
         }
         if($get_content == ""){
             $get_content = "-------------------------------------------";
