@@ -26,9 +26,9 @@
         @csrf
             <p class="item"><span><i class="fa fa-user fa-bounce"></i></span> ログインID</p>
             <div class="inputMargin">
-            <input type="text" name="id" placeholder="ログインIDを入力して下さい" required></div>
+            <input type="text" name="id" placeholder=" ログインIDを入力してください" required></div>
             <p class="item"><span><i class="fa fa-lock fa-bounce"></i></span> パスワード</p>
-            <div class="inputMargin"><input type="password" name="password" placeholder="パスワードを入力して下さい" required></div>
+            <div class="inputMargin"><input type="password" name="password" placeholder=" パスワードを入力してください" required></div>
             <input type="submit" class="loginBtn" value="ログイン">
         </form>
         </div>
