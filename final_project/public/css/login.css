@@ -5,7 +5,7 @@
     transform: translateY(0);
     }
     50% {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
     }
     100% {
     transform: translateY(0);
@@ -53,7 +53,7 @@
     padding-bottom: 5px;
 }
 .fa-bounce {
-    animation: bounce 1s ;
+    animation: bounce 1s infinite ;
 }
 
 
@@ -105,5 +105,5 @@ input.loginBtn {
 }
 
 input.loginBtn:hover {
-    background-color: rgba(4, 161, 252, 1); /* カーソルがボタン上に来た時の背景色 */
+    background-color: #0bd; /* カーソルがボタン上に来た時の背景色 */
 }
