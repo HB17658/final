@@ -44,6 +44,7 @@
         </ul>
     </nav>
     <!-- メニューバー終わり -->
+    <hr>
     </form>
     @if(isset($msg))
         <h2>検索結果一覧</h2>
@@ -55,11 +56,14 @@
             <h2 class="post-title">書籍の詳細</h2>
             <p class="post-data">書籍 <span>一覧</span></p>
         </header>
+
         
-        <div class ="wrapper">
-            
+        
+        
+        <div class ="news-contents wrapper">
             @foreach($results as $result)
             <!-- メイン部分 -->
+            
             <article>
             <!-- ログインした直後に書籍一覧を表示するHTML欄 -->
             <form action="/new/info" method="GET" >
