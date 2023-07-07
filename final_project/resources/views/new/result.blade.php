@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
     <title>Document</title>
+    <script src="/js/base.js"></script>
     <link rel="stylesheet" href="/css/base.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
@@ -18,7 +19,7 @@
 </script>
 <body>
     <!-- ヘッダー検索 -->
-<div id="new">
+    <div id="new">
     <h1 class="title">書籍検索</h1>
     <p class="right"><a href="/new/login" class="btn btn--orange" >ログアウト</a></p>
     
@@ -71,7 +72,11 @@
                     <tr><th colspan="3" class="booktitle">{{$result->title}}</a></th></tr>
                     <tr><th colspan="3" class="bookauthor">{{$result->author_name}}</th></tr>
                     <tr>
-                        <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
+                        <td rowspan="3" style="width: 150px">
+                         
+                            <img src="{{ asset($result->image)}}" alt="50" height="200" width="150">
+                            
+                        </td>
                     </tr>
                     <tr>
                     <td class="bookOverview">本の概要</td>
@@ -95,6 +100,7 @@
                 </ul>
                 <h3 class="sub-title">書籍紹介動画</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WGZ2Qm_NcEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
             </aside><!-- サブの終わり -->
             
             </div>
@@ -105,7 +111,19 @@
             <h2 class="post-title">検索の詳細</h2>
             <p class="post-data">検索 <span>一覧</span></p>
         </header>
+        
+        <!-- カレンダー -->
+    <div class="wrapper">
+        <h2 class="rentalday">貸出期間は30日です</h2><br>
+    <h1 id="header"></h1>
+    <div id="next-prev-button">
+        <button id="prev" onclick="prev()">‹</button>
+        <button id="next" onclick="next()">›</button>
+    </div>
+    <div id="calendar"></div>
+    </div>
 
+    <script src="/js/base.js"></script>
         <!-- <h2>検索結果一覧</h2> -->
         
             @foreach($searchData as $r)
@@ -115,9 +133,9 @@
                 <tr><th colspan="3" class="booktitle">{{$r->title}}</th></tr>
                 <tr><th colspan="3" class="bookauthor">{{$r->author_name}}</th></tr>
                 <tr>
-                    <td rowspan="4"><img src="{{ asset($r->image)}}" alt="50" height="200" width="150"></td>
+                    <td rowspan="3" style="width: 150px"><img src="{{ asset($r->image)}}" alt="50" height="200" width="150"></td>
                 </tr>
-                <tr>
+                <tr >
                 <td class="bookOverview">本の概要</td>
                 </tr>
                 <tr>

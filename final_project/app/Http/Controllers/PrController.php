@@ -133,7 +133,7 @@ class PrController extends Controller
         $author = $get_summary['author'];
         $image_url = $get_summary['cover'];
         if($image_url == ""){
-            $image_url = "image/nonomura.jpg";
+            $image_url = 'https://1.bp.blogspot.com/-M4C13njcTJI/Vy2vvKjPw1I/AAAAAAAA6bI/19R8CwIuS6odsE0EbnjyMV-REIZa3id0QCLcB/s800/book_tosyokan_label_blue.png';
         }
         if($get_content == ""){
             $get_content = "-------------------------------------------";
@@ -152,8 +152,14 @@ class PrController extends Controller
         $book->image = $image_url;
         $make_year = substr($make_year, 0, 4) . '/' . substr($make_year, 4, 2) . '/' . substr($make_year, 6, 2);
         $book->year = $make_year;
+        $get_content = htmlspecialchars($get_content, ENT_QUOTES, 'UTF-8');
+        if($get_content == ""){
+            $get_content = "概要を取得できませんでした";
+        }
         $book->info = $get_content;
+
         $book->ISBN = $isbn;
+        //dd($image_url,$make_year,$get_content,$book_name,$publisher);
         $book->save();
         $data = [
             '書籍名'=>$book->booktitle,
