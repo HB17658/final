@@ -111,7 +111,7 @@ a.btn--orange:hover {
 }
 
 a.btn--radius {
-    border-radius: 100vh;
+    border-radius: 110vh;
 }
 /* 右に寄せる */
 p.right{
@@ -135,7 +135,7 @@ aside{
 
 .news-contents{
     /* 右に寄せる */
-    /* float: right; */
+    float: right;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px; 
@@ -172,6 +172,7 @@ aside{
     font-size: 2rem;
     font-weight: normal;
     margin-left: 120px;
+    
 }
 /* 本のタイトル */
 .booktitle{
