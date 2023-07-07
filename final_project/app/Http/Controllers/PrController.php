@@ -132,6 +132,9 @@ class PrController extends Controller
         $book_name = $get_summary['title'];
         $author = $get_summary['author'];
         $image_url = $get_summary['cover'];
+        if($image_url == ""){
+            $image_url = null;
+        }
         $make_year = $get_summary['pubdate'];
         $make_year = intval(str_replace('-', '', $get_summary['pubdate']));
         $publisher = $get_summary['publisher'];
