@@ -135,9 +135,7 @@ class PrController extends Controller
         if($image_url == ""){
             $image_url = 'https://1.bp.blogspot.com/-M4C13njcTJI/Vy2vvKjPw1I/AAAAAAAA6bI/19R8CwIuS6odsE0EbnjyMV-REIZa3id0QCLcB/s800/book_tosyokan_label_blue.png';
         }
-        if($get_content == ""){
-            $get_content = "-------------------------------------------";
-        }
+
         $make_year = $get_summary['pubdate'];
         $make_year = intval(str_replace('-', '', $get_summary['pubdate']));
         $publisher = $get_summary['publisher'];
