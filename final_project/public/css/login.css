@@ -35,10 +35,9 @@
 }
 .loginForm{
     background-color: #222222b4;
-    min-height: 17rem;
     margin: auto;
-    max-width: 30rem;
-    padding: 1rem;
+    max-width: 32rem;
+    padding: 2.5rem;
     border-radius: 10px;
 }
 
