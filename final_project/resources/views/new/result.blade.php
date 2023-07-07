@@ -72,7 +72,7 @@
                     <tr><th colspan="3" class="booktitle">{{$result->title}}</a></th></tr>
                     <tr><th colspan="3" class="bookauthor">{{$result->author_name}}</th></tr>
                     <tr>
-                        <td rowspan="4"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
+                        <td rowspan="3" style="width: 150px"><img src="{{ asset($result->image)}}" alt="50" height="200" width="150"></td>
                     </tr>
                     <tr>
                     <td class="bookOverview">本の概要</td>
@@ -111,13 +111,14 @@
         <div class = "content-wrapper">
             @foreach($searchData as $r)
                     <!-- 検索フォームから入力された値から一致した書籍一覧を表示するHTML欄 -->
+                <br>
                 <table>
                 <tr><th colspan="3" class="booktitle">{{$r->title}}</th></tr>
                 <tr><th colspan="3" class="bookauthor">{{$r->author_name}}</th></tr>
                 <tr>
-                    <td rowspan="4"><img src="{{ asset($r->image)}}" alt="50" height="200" width="150"></td>
+                    <td rowspan="3" style="width: 150px"><img src="{{ asset($r->image)}}" alt="50" height="200" width="150"></td>
                 </tr>
-                <tr>
+                <tr >
                 <td class="bookOverview">本の概要</td>
                 </tr>
                 <tr>

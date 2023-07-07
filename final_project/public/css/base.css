@@ -189,3 +189,8 @@ aside{
     border-bottom: 2px #0bd solid;
     font-weight: normal;
 }
+
+table{
+    width: 100rem;
+    position: relative;left: 0;
+}

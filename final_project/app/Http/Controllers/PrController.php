@@ -149,8 +149,14 @@ class PrController extends Controller
         $book->image = $image_url;
         $make_year = substr($make_year, 0, 4) . '/' . substr($make_year, 4, 2) . '/' . substr($make_year, 6, 2);
         $book->year = $make_year;
+        $get_content = htmlspecialchars($get_content, ENT_QUOTES, 'UTF-8');
+        if($get_content == ""){
+            $get_content = "概要を取得できませんでした";
+        }
         $book->info = $get_content;
+
         $book->ISBN = $isbn;
+        //dd($image_url,$make_year,$get_content,$book_name,$publisher);
         $book->save();
         $data = [
             '書籍名'=>$book->booktitle,
