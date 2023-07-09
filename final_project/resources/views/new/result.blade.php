@@ -40,7 +40,7 @@
             <li><a href="" class="menu">詳細検索</a></li>
             <li><a href="" class="menu">履歴</a></li>
             <li><a href="" class="menu">マイページ</a></li>
-            <li><a href="/new/store">新規登録</a></li>
+            <li><a href="/new/store" id="newRecord">新規登録</a></li>
             <li><a href="" class="menu">ヘルプ</a></li>
         </ul>
     </nav>
@@ -118,6 +118,8 @@
             </form>
             </article>
             @endforeach
+            <br>
+            {{ $results->links() }}
             
         <!-- </div>元の位置 -->
     @elseif(isset($searchData))
@@ -152,13 +154,15 @@
                 <br>
                 </article>
             @endforeach
+            <br>
+            {{ $searchData->links() }}
 
     @endif
 
 
     
         <!-- フッター -->
-        <footer>
+        <footer class="content-wrapper">
             <div>
                 <p><small>&copy;2023 ICTエンジニア科</small></p>
             </div>

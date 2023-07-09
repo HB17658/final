@@ -33,8 +33,8 @@ class PrController extends Controller
                 return redirect()->back();
             }else{
             $book = Book::where('title','LIKE', "%%")
-            ->orWhere('author_name', 'LIKE', "%%")
-            ->get();
+            ->orWhere('author_name', 'LIKE', "%%")->paginate(30);
+            //->get();
             $data = [
             'results'=>$book
             ];
@@ -53,7 +53,8 @@ class PrController extends Controller
 
         $book = Book::where('title','LIKE', "%$searchword%")
         ->orWhere('author_name', 'LIKE', "%$searchword%")
-        ->get();
+        ->paginate(30);
+        //->get();
         $data = [
         'searchData'=>$book
         ];
@@ -79,8 +80,7 @@ class PrController extends Controller
     public function info(Request $r){
         
         $isbn = $r->query('name');
-        $book = Book::where('ISBN','=', "$isbn")
-        ->get();
+        $book = Book::where('ISBN','=', "$isbn");
         $data = [
             'result'=>$book
         ];
@@ -115,7 +115,8 @@ class PrController extends Controller
         $proxy_url = "http://{$proxy_user}:{$proxy_pass}@{$proxy_host}:{$proxy_port}";
         $base_url = 'https://api.openbd.jp/v1/get?isbn=';
         $url = $base_url . $value;
-        $response = $guzzle_client->request('GET', $url, ['proxy' => $proxy_url]);
+        //$response = $guzzle_client->request('GET', $url, ['proxy' => $proxy_url]);
+        $response = $guzzle_client->request('GET', $url);
         $result = $response->getBody();
         $json_data = json_decode($result, true);
         // ...

@@ -19,8 +19,8 @@
             @csrf
             <div class="text-center">
                 <p>
-                    <input type="number" name="ISBN">
-                    <input type="submit" value="登録">
+                    <input type="number" id="txtISBN" name="ISBN">
+                    <input type="submit" id="inputBtn" value="登録">
                 </p>
         </form>
         <a href="/new/result">前の画面に戻る</a>
