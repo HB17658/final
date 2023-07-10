@@ -115,8 +115,8 @@ class PrController extends Controller
         $proxy_url = "http://{$proxy_user}:{$proxy_pass}@{$proxy_host}:{$proxy_port}";
         $base_url = 'https://api.openbd.jp/v1/get?isbn=';
         $url = $base_url . $value;
-        //$response = $guzzle_client->request('GET', $url, ['proxy' => $proxy_url]);
-        $response = $guzzle_client->request('GET', $url);
+        $response = $guzzle_client->request('GET', $url, ['proxy' => $proxy_url]);
+        //$response = $guzzle_client->request('GET', $url);
         $result = $response->getBody();
         $json_data = json_decode($result, true);
         // ...
