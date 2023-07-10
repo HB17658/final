@@ -70,8 +70,8 @@
                 </ul>
 
                 <h3 class="sub-title">書籍紹介動画</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WGZ2Qm_NcEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GMMtuR2jrm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="480" height="315" src="https://www.youtube.com/embed/WGZ2Qm_NcEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="480" height="315" src="https://www.youtube.com/embed/GMMtuR2jrm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </aside>
         </div>
         </div>
