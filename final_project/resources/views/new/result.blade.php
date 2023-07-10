@@ -36,7 +36,7 @@
     <!-- メニューバー -->
     <nav>
         <ul>
-            <li><a href="/new/maintenance" class="menu">トップページ</a></li>
+            <li><a href="/new/result" class="menu">トップページ</a></li>
             <li><a href="/new/maintenance" class="menu">詳細検索</a></li>
             <li><a href="/new/maintenance" class="menu">履歴</a></li>
             <li><a href="/new/maintenance" class="menu">マイページ</a></li>
