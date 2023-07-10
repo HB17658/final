@@ -33,8 +33,8 @@ class PrController extends Controller
                 return redirect()->back();
             }else{
             $book = Book::where('title','LIKE', "%%")
-            ->orWhere('author_name', 'LIKE', "%%")
-            ->get();
+            ->orWhere('author_name', 'LIKE', "%%")->paginate(30);
+            //->get();
             $data = [
             'results'=>$book
             ];
@@ -53,7 +53,8 @@ class PrController extends Controller
 
         $book = Book::where('title','LIKE', "%$searchword%")
         ->orWhere('author_name', 'LIKE', "%$searchword%")
-        ->get();
+        ->paginate(30);
+        //->get();
         $data = [
         'searchData'=>$book
         ];
@@ -79,8 +80,7 @@ class PrController extends Controller
     public function info(Request $r){
         
         $isbn = $r->query('name');
-        $book = Book::where('ISBN','=', "$isbn")
-        ->get();
+        $book = Book::where('ISBN','=', "$isbn");
         $data = [
             'result'=>$book
         ];
@@ -116,6 +116,7 @@ class PrController extends Controller
         $base_url = 'https://api.openbd.jp/v1/get?isbn=';
         $url = $base_url . $value;
         $response = $guzzle_client->request('GET', $url, ['proxy' => $proxy_url]);
+        //$response = $guzzle_client->request('GET', $url);
         $result = $response->getBody();
         $json_data = json_decode($result, true);
         // ...
@@ -135,9 +136,7 @@ class PrController extends Controller
         if($image_url == ""){
             $image_url = 'https://1.bp.blogspot.com/-M4C13njcTJI/Vy2vvKjPw1I/AAAAAAAA6bI/19R8CwIuS6odsE0EbnjyMV-REIZa3id0QCLcB/s800/book_tosyokan_label_blue.png';
         }
-        if($get_content == ""){
-            $get_content = "-------------------------------------------";
-        }
+
         $make_year = $get_summary['pubdate'];
         $make_year = intval(str_replace('-', '', $get_summary['pubdate']));
         $publisher = $get_summary['publisher'];
