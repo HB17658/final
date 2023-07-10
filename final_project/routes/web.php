@@ -42,3 +42,10 @@ Route::get('new/store',function(){
     return view('new/store');
 });
 Route::post('new/store',[PrController::class,'store']);
+
+Route::get('new/maintenance',function(){
+    return view('new/maintenance');
+});
+
+Route::post('new/maintenance',[PrController::class,'maintenance']);
+

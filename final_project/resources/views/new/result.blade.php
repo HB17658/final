@@ -36,12 +36,12 @@
     <!-- メニューバー -->
     <nav>
         <ul>
-            <li><a href="" class="menu">トップページ</a></li>
-            <li><a href="" class="menu">詳細検索</a></li>
-            <li><a href="" class="menu">履歴</a></li>
-            <li><a href="" class="menu">マイページ</a></li>
+            <li><a href="/new/maintenance" class="menu">トップページ</a></li>
+            <li><a href="/new/maintenance" class="menu">詳細検索</a></li>
+            <li><a href="/new/maintenance" class="menu">履歴</a></li>
+            <li><a href="/new/maintenance" class="menu">マイページ</a></li>
             <li><a href="/new/store" id="newRecord">新規登録</a></li>
-            <li><a href="" class="menu">ヘルプ</a></li>
+            <li><a href="/new/maintenance" class="menu">ヘルプ</a></li>
         </ul>
     </nav>
     <!-- メニューバー終わり -->
