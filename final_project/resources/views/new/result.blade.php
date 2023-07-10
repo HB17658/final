@@ -41,7 +41,7 @@
             <li><a href="/new/maintenance" class="menu">履歴</a></li>
             <li><a href="/new/maintenance" class="menu">マイページ</a></li>
             <li><a href="/new/store" id="newRecord">新規登録</a></li>
-            <li><a href="https://www.google.com/?hl=ja" class="menu">ヘルプ</a></li>
+            <li><a href="http://m-search.jp/ggrks/" class="menu">ヘルプ</a></li>
         </ul>
     </nav>
     <!-- メニューバー終わり -->
